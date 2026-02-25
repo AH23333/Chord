@@ -65,7 +65,7 @@ vector<string> ChordCLI::split(const string &s, char delimiter)
 {
     vector<string> tokens;
     string token;
-    istringstream tokenStream(s);
+    istringstream tokenStream();
     while (getline(tokenStream, token, delimiter))
     {
         string trimmed = trim(token);
@@ -159,7 +159,7 @@ CommandResult ChordCLI::validate_command(const vector<string> &parts)
         result.args = allIps;
     }
 
-    if (cmd == "remove_resources" && result.args.size() == 1 && result.args[0] == "*")
+    if (cmd == "rrs" && result.args.size() == 1 && result.args[0] == "*")
     {
         auto allResources = ringManager.getAllResourceNames();
         if (allResources.empty())
@@ -568,4 +568,5 @@ void ChordCLI::print_error(const string &msg)
 void ChordCLI::print_success(const string &msg)
 {
     cout << "\033[32m[成功] " << msg << "\033[0m" << endl;
+
 }
