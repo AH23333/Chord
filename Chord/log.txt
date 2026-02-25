@@ -1,0 +1,694 @@
+[Sun Feb 22 17:55:19 2026] === 程序启动 ===
+[Sun Feb 22 17:55:19 2026] 时间: Sun Feb 22 17:55:19 2026
+[Sun Feb 22 17:55:32 2026] === 程序结束 ===
+[Sun Feb 22 17:56:11 2026] === 程序启动 ===
+[Sun Feb 22 17:56:11 2026] 时间: Sun Feb 22 17:56:11 2026
+[Sun Feb 22 17:56:35 2026] === 程序结束 ===
+[Sun Feb 22 17:56:37 2026] === 程序启动 ===
+[Sun Feb 22 17:56:37 2026] 时间: Sun Feb 22 17:56:37 2026
+[Sun Feb 22 17:56:43 2026] === 程序结束 ===
+[Sun Feb 22 17:58:35 2026] === 程序启动 ===
+[Sun Feb 22 17:58:35 2026] 时间: Sun Feb 22 17:58:35 2026
+[Sun Feb 22 17:59:40 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 17:59:40 2026] [INFO] 节点数: 0
+[Sun Feb 22 18:00:32 2026] [INFO] Init Chord Node(ID: 105 ,IP: 192.168.1.101 ) with finger table: [(106, Node(ID: 105 ,IP: 192.168.1.101 )), (107, Node(ID: 105 ,IP: 192.168.1.101 )), (109, Node(ID: 105 ,IP: 192.168.1.101 )), (113, Node(ID: 105 ,IP: 192.168.1.101 )), (121, Node(ID: 105 ,IP: 192.168.1.101 )), (137, Node(ID: 105 ,IP: 192.168.1.101 )), (169, Node(ID: 105 ,IP: 192.168.1.101 )), (233, Node(ID: 105 ,IP: 192.168.1.101 )), ]
+[Sun Feb 22 18:00:32 2026] [INFO] 节点加入: Node(ID: 105 ,IP: 192.168.1.101 )
+[Sun Feb 22 18:00:32 2026] [INFO] joinRing: Node(ID: 105 ,IP: 192.168.1.101 )
+[Sun Feb 22 18:00:32 2026] [INFO] Init Chord Node(ID: 105 ,IP: 192.168.1.101 ) as the first node in the ring.
+[Sun Feb 22 18:00:37 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 18:00:37 2026] [INFO] 节点数: 1
+[Sun Feb 22 18:01:25 2026] [INFO] Init Chord Node(ID: 176 ,IP: 192.168.2.101 ) with finger table: [(177, Node(ID: 176 ,IP: 192.168.2.101 )), (178, Node(ID: 176 ,IP: 192.168.2.101 )), (180, Node(ID: 176 ,IP: 192.168.2.101 )), (184, Node(ID: 176 ,IP: 192.168.2.101 )), (192, Node(ID: 176 ,IP: 192.168.2.101 )), (208, Node(ID: 176 ,IP: 192.168.2.101 )), (240, Node(ID: 176 ,IP: 192.168.2.101 )), (48, Node(ID: 176 ,IP: 192.168.2.101 )), ]
+[Sun Feb 22 18:01:25 2026] [INFO] 节点加入: Node(ID: 176 ,IP: 192.168.2.101 )
+[Sun Feb 22 18:01:25 2026] [INFO] joinRing: Node(ID: 176 ,IP: 192.168.2.101 )
+[Sun Feb 22 18:01:25 2026] [INFO] initWithBootstrapNode: self=Node(ID: 176 ,IP: 192.168.2.101 ), bootstrap=Node(ID: 105 ,IP: 192.168.1.101 )
+[Sun Feb 22 18:01:25 2026] [INFO] 找到后继: Node(ID: 105 ,IP: 192.168.1.101 ), bootstrap=Node(ID: 105 ,IP: 192.168.1.101 ), successorNode == bootstrapNode: true
+[Sun Feb 22 18:01:25 2026] [INFO] 节点 Node(ID: 176 ,IP: 192.168.2.101 ) 初始化完成
+[Sun Feb 22 18:01:28 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 18:01:28 2026] [INFO] 节点数: 2
+[Sun Feb 22 18:01:45 2026] [INFO] Init Chord Node(ID: 207 ,IP: 192.168.1.9 ) with finger table: [(208, Node(ID: 207 ,IP: 192.168.1.9 )), (209, Node(ID: 207 ,IP: 192.168.1.9 )), (211, Node(ID: 207 ,IP: 192.168.1.9 )), (215, Node(ID: 207 ,IP: 192.168.1.9 )), (223, Node(ID: 207 ,IP: 192.168.1.9 )), (239, Node(ID: 207 ,IP: 192.168.1.9 )), (15, Node(ID: 207 ,IP: 192.168.1.9 )), (79, Node(ID: 207 ,IP: 192.168.1.9 )), ]
+[Sun Feb 22 18:01:45 2026] [INFO] 节点加入: Node(ID: 207 ,IP: 192.168.1.9 )
+[Sun Feb 22 18:01:45 2026] [INFO] joinRing: Node(ID: 207 ,IP: 192.168.1.9 )
+[Sun Feb 22 18:01:45 2026] [INFO] initWithBootstrapNode: self=Node(ID: 207 ,IP: 192.168.1.9 ), bootstrap=Node(ID: 105 ,IP: 192.168.1.101 )
+[Sun Feb 22 18:01:45 2026] [INFO] 找到后继: Node(ID: 105 ,IP: 192.168.1.101 ), bootstrap=Node(ID: 105 ,IP: 192.168.1.101 ), successorNode == bootstrapNode: true
+[Sun Feb 22 18:01:45 2026] [INFO] setSuccessor: Node(ID: 176 ,IP: 192.168.2.101 ) -> Node(ID: 207 ,IP: 192.168.1.9 )
+[Sun Feb 22 18:01:45 2026] [INFO] 节点 Node(ID: 207 ,IP: 192.168.1.9 ) 初始化完成
+[Sun Feb 22 18:01:47 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 18:01:47 2026] [INFO] 节点数: 3
+[Sun Feb 22 18:03:12 2026] [INFO] 资源 'a.pdf' -> Node(ID: 105 ,IP: 192.168.1.101 )
+[Sun Feb 22 18:03:12 2026] [INFO] 资源 'b.xml' -> Node(ID: 105 ,IP: 192.168.1.101 )
+[Sun Feb 22 18:03:12 2026] [INFO] 资源 'c.yml' -> Node(ID: 207 ,IP: 192.168.1.9 )
+[Sun Feb 22 18:03:12 2026] [INFO] 资源 'd.mp3' -> Node(ID: 176 ,IP: 192.168.2.101 )
+[Sun Feb 22 18:03:12 2026] [INFO] 资源 'e.mp4' -> Node(ID: 176 ,IP: 192.168.2.101 )
+[Sun Feb 22 18:03:12 2026] [INFO] 资源 'f.doc' -> Node(ID: 105 ,IP: 192.168.1.101 )
+[Sun Feb 22 18:04:09 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 18:04:09 2026] [INFO] 节点数: 3
+[Sun Feb 22 18:12:42 2026] === 程序结束 ===
+[Sun Feb 22 18:21:35 2026] === 程序启动 ===
+[Sun Feb 22 18:21:35 2026] 时间: Sun Feb 22 18:21:35 2026
+[Sun Feb 22 18:23:05 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) with finger table: [(44, Node(ID: 43 ,IP: 1 )), (45, Node(ID: 43 ,IP: 1 )), (47, Node(ID: 43 ,IP: 1 )), (51, Node(ID: 43 ,IP: 1 )), (59, Node(ID: 43 ,IP: 1 )), (75, Node(ID: 43 ,IP: 1 )), (107, Node(ID: 43 ,IP: 1 )), (171, Node(ID: 43 ,IP: 1 )), ]
+[Sun Feb 22 18:23:05 2026] [INFO] 节点加入: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:23:05 2026] [INFO] joinRing: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:23:05 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) as the first node in the ring.
+[Sun Feb 22 18:23:10 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 18:23:10 2026] [INFO] 节点数: 1
+[Sun Feb 22 18:23:33 2026] [INFO] Init Chord Node(ID: 55 ,IP: 2 ) with finger table: [(56, Node(ID: 55 ,IP: 2 )), (57, Node(ID: 55 ,IP: 2 )), (59, Node(ID: 55 ,IP: 2 )), (63, Node(ID: 55 ,IP: 2 )), (71, Node(ID: 55 ,IP: 2 )), (87, Node(ID: 55 ,IP: 2 )), (119, Node(ID: 55 ,IP: 2 )), (183, Node(ID: 55 ,IP: 2 )), ]
+[Sun Feb 22 18:23:33 2026] [INFO] 节点加入: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 18:23:33 2026] [INFO] joinRing: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 18:23:33 2026] [INFO] initWithBootstrapNode: self=Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:23:33 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Sun Feb 22 18:23:33 2026] [INFO] 节点 Node(ID: 55 ,IP: 2 ) 初始化完成
+[Sun Feb 22 18:23:33 2026] [INFO] Init Chord Node(ID: 218 ,IP: 3 ) with finger table: [(219, Node(ID: 218 ,IP: 3 )), (220, Node(ID: 218 ,IP: 3 )), (222, Node(ID: 218 ,IP: 3 )), (226, Node(ID: 218 ,IP: 3 )), (234, Node(ID: 218 ,IP: 3 )), (250, Node(ID: 218 ,IP: 3 )), (26, Node(ID: 218 ,IP: 3 )), (90, Node(ID: 218 ,IP: 3 )), ]
+[Sun Feb 22 18:23:33 2026] [INFO] 节点加入: Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 18:23:33 2026] [INFO] joinRing: Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 18:23:33 2026] [INFO] initWithBootstrapNode: self=Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:23:33 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Sun Feb 22 18:23:33 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 18:23:33 2026] [INFO] 节点 Node(ID: 218 ,IP: 3 ) 初始化完成
+[Sun Feb 22 18:23:33 2026] [INFO] Init Chord Node(ID: 137 ,IP: 4 ) with finger table: [(138, Node(ID: 137 ,IP: 4 )), (139, Node(ID: 137 ,IP: 4 )), (141, Node(ID: 137 ,IP: 4 )), (145, Node(ID: 137 ,IP: 4 )), (153, Node(ID: 137 ,IP: 4 )), (169, Node(ID: 137 ,IP: 4 )), (201, Node(ID: 137 ,IP: 4 )), (9, Node(ID: 137 ,IP: 4 )), ]
+[Sun Feb 22 18:23:33 2026] [INFO] 节点加入: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 18:23:33 2026] [INFO] joinRing: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 18:23:33 2026] [INFO] initWithBootstrapNode: self=Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:23:33 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 18:23:33 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 18:23:33 2026] [INFO] 节点 Node(ID: 137 ,IP: 4 ) 初始化完成
+[Sun Feb 22 18:23:33 2026] [INFO] Init Chord Node(ID: 214 ,IP: 5 ) with finger table: [(215, Node(ID: 214 ,IP: 5 )), (216, Node(ID: 214 ,IP: 5 )), (218, Node(ID: 214 ,IP: 5 )), (222, Node(ID: 214 ,IP: 5 )), (230, Node(ID: 214 ,IP: 5 )), (246, Node(ID: 214 ,IP: 5 )), (22, Node(ID: 214 ,IP: 5 )), (86, Node(ID: 214 ,IP: 5 )), ]
+[Sun Feb 22 18:23:33 2026] [INFO] 节点加入: Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 18:23:33 2026] [INFO] joinRing: Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 18:23:33 2026] [INFO] initWithBootstrapNode: self=Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:23:33 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 18:23:33 2026] [INFO] setSuccessor: Node(ID: 137 ,IP: 4 ) -> Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 18:23:33 2026] [INFO] 节点 Node(ID: 214 ,IP: 5 ) 初始化完成
+[Sun Feb 22 18:23:33 2026] [INFO] Init Chord Node(ID: 110 ,IP: 6 ) with finger table: [(111, Node(ID: 110 ,IP: 6 )), (112, Node(ID: 110 ,IP: 6 )), (114, Node(ID: 110 ,IP: 6 )), (118, Node(ID: 110 ,IP: 6 )), (126, Node(ID: 110 ,IP: 6 )), (142, Node(ID: 110 ,IP: 6 )), (174, Node(ID: 110 ,IP: 6 )), (238, Node(ID: 110 ,IP: 6 )), ]
+[Sun Feb 22 18:23:33 2026] [INFO] 节点加入: Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 18:23:33 2026] [INFO] joinRing: Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 18:23:33 2026] [INFO] initWithBootstrapNode: self=Node(ID: 110 ,IP: 6 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:23:33 2026] [INFO] 找到后继: Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 18:23:33 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 18:23:33 2026] [INFO] 节点 Node(ID: 110 ,IP: 6 ) 初始化完成
+[Sun Feb 22 18:23:33 2026] [INFO] Init Chord Node(ID: 205 ,IP: 7 ) with finger table: [(206, Node(ID: 205 ,IP: 7 )), (207, Node(ID: 205 ,IP: 7 )), (209, Node(ID: 205 ,IP: 7 )), (213, Node(ID: 205 ,IP: 7 )), (221, Node(ID: 205 ,IP: 7 )), (237, Node(ID: 205 ,IP: 7 )), (13, Node(ID: 205 ,IP: 7 )), (77, Node(ID: 205 ,IP: 7 )), ]
+[Sun Feb 22 18:23:33 2026] [INFO] 节点加入: Node(ID: 205 ,IP: 7 )
+[Sun Feb 22 18:23:33 2026] [INFO] joinRing: Node(ID: 205 ,IP: 7 )
+[Sun Feb 22 18:23:33 2026] [INFO] initWithBootstrapNode: self=Node(ID: 205 ,IP: 7 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:23:33 2026] [INFO] 找到后继: Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 18:23:33 2026] [INFO] setSuccessor: Node(ID: 137 ,IP: 4 ) -> Node(ID: 205 ,IP: 7 )
+[Sun Feb 22 18:23:33 2026] [INFO] 节点 Node(ID: 205 ,IP: 7 ) 初始化完成
+[Sun Feb 22 18:23:33 2026] [INFO] Init Chord Node(ID: 206 ,IP: 8 ) with finger table: [(207, Node(ID: 206 ,IP: 8 )), (208, Node(ID: 206 ,IP: 8 )), (210, Node(ID: 206 ,IP: 8 )), (214, Node(ID: 206 ,IP: 8 )), (222, Node(ID: 206 ,IP: 8 )), (238, Node(ID: 206 ,IP: 8 )), (14, Node(ID: 206 ,IP: 8 )), (78, Node(ID: 206 ,IP: 8 )), ]
+[Sun Feb 22 18:23:33 2026] [INFO] 节点加入: Node(ID: 206 ,IP: 8 )
+[Sun Feb 22 18:23:33 2026] [INFO] joinRing: Node(ID: 206 ,IP: 8 )
+[Sun Feb 22 18:23:33 2026] [INFO] initWithBootstrapNode: self=Node(ID: 206 ,IP: 8 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:23:33 2026] [INFO] 找到后继: Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 18:23:33 2026] [INFO] setSuccessor: Node(ID: 205 ,IP: 7 ) -> Node(ID: 206 ,IP: 8 )
+[Sun Feb 22 18:23:33 2026] [INFO] 节点 Node(ID: 206 ,IP: 8 ) 初始化完成
+[Sun Feb 22 18:23:33 2026] [INFO] Init Chord Node(ID: 44 ,IP: 9 ) with finger table: [(45, Node(ID: 44 ,IP: 9 )), (46, Node(ID: 44 ,IP: 9 )), (48, Node(ID: 44 ,IP: 9 )), (52, Node(ID: 44 ,IP: 9 )), (60, Node(ID: 44 ,IP: 9 )), (76, Node(ID: 44 ,IP: 9 )), (108, Node(ID: 44 ,IP: 9 )), (172, Node(ID: 44 ,IP: 9 )), ]
+[Sun Feb 22 18:23:33 2026] [INFO] 节点加入: Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 18:23:33 2026] [INFO] joinRing: Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 18:23:33 2026] [INFO] initWithBootstrapNode: self=Node(ID: 44 ,IP: 9 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:23:33 2026] [INFO] 找到后继: Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 18:23:33 2026] [INFO] setSuccessor: Node(ID: 43 ,IP: 1 ) -> Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 18:23:33 2026] [INFO] 节点 Node(ID: 44 ,IP: 9 ) 初始化完成
+[Sun Feb 22 18:23:36 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 18:23:36 2026] [INFO] 节点数: 9
+[Sun Feb 22 18:25:35 2026] [INFO] 资源 'a.pdf' -> Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:26:10 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 18:26:10 2026] [INFO] Node(ID: 43 ,IP: 1 ) 已离开
+[Sun Feb 22 18:26:10 2026] [INFO] Destroy Chord Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:26:10 2026] [INFO] 节点移除: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:26:58 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 18:26:58 2026] [INFO] 节点数: 8
+[Sun Feb 22 18:29:51 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 18:29:51 2026] [INFO] Node(ID: 44 ,IP: 9 ) 已离开
+[Sun Feb 22 18:29:51 2026] [INFO] Destroy Chord Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 18:29:51 2026] [INFO] 节点移除: Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 18:29:51 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 18:29:51 2026] [INFO] Node(ID: 55 ,IP: 2 ) 已离开
+[Sun Feb 22 18:29:51 2026] [INFO] Destroy Chord Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 18:29:51 2026] [INFO] 节点移除: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 18:29:51 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 18:29:51 2026] [INFO] Node(ID: 110 ,IP: 6 ) 已离开
+[Sun Feb 22 18:29:51 2026] [INFO] Destroy Chord Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 18:29:51 2026] [INFO] 节点移除: Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 18:29:51 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 205 ,IP: 7 )
+[Sun Feb 22 18:29:51 2026] [INFO] Node(ID: 137 ,IP: 4 ) 已离开
+[Sun Feb 22 18:29:51 2026] [INFO] Destroy Chord Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 18:29:51 2026] [INFO] 节点移除: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 18:29:51 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 206 ,IP: 8 )
+[Sun Feb 22 18:29:51 2026] [INFO] Node(ID: 205 ,IP: 7 ) 已离开
+[Sun Feb 22 18:29:51 2026] [INFO] Destroy Chord Node(ID: 205 ,IP: 7 )
+[Sun Feb 22 18:29:51 2026] [INFO] 节点移除: Node(ID: 205 ,IP: 7 )
+[Sun Feb 22 18:29:51 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 18:29:51 2026] [INFO] Node(ID: 206 ,IP: 8 ) 已离开
+[Sun Feb 22 18:29:51 2026] [INFO] Destroy Chord Node(ID: 206 ,IP: 8 )
+[Sun Feb 22 18:29:51 2026] [INFO] 节点移除: Node(ID: 206 ,IP: 8 )
+[Sun Feb 22 18:29:51 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 18:29:51 2026] [INFO] Node(ID: 214 ,IP: 5 ) 已离开
+[Sun Feb 22 18:29:51 2026] [INFO] Destroy Chord Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 18:29:51 2026] [INFO] 节点移除: Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 18:29:51 2026] [INFO] Destroy Chord Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 18:29:51 2026] [INFO] 节点移除: Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 18:45:25 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 18:45:25 2026] [INFO] 节点数: 0
+[Sun Feb 22 18:45:46 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) with finger table: [(44, Node(ID: 43 ,IP: 1 )), (45, Node(ID: 43 ,IP: 1 )), (47, Node(ID: 43 ,IP: 1 )), (51, Node(ID: 43 ,IP: 1 )), (59, Node(ID: 43 ,IP: 1 )), (75, Node(ID: 43 ,IP: 1 )), (107, Node(ID: 43 ,IP: 1 )), (171, Node(ID: 43 ,IP: 1 )), ]
+[Sun Feb 22 18:45:46 2026] [INFO] 节点加入: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:45:46 2026] [INFO] joinRing: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:45:46 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) as the first node in the ring.
+[Sun Feb 22 18:45:46 2026] [INFO] Init Chord Node(ID: 55 ,IP: 2 ) with finger table: [(56, Node(ID: 55 ,IP: 2 )), (57, Node(ID: 55 ,IP: 2 )), (59, Node(ID: 55 ,IP: 2 )), (63, Node(ID: 55 ,IP: 2 )), (71, Node(ID: 55 ,IP: 2 )), (87, Node(ID: 55 ,IP: 2 )), (119, Node(ID: 55 ,IP: 2 )), (183, Node(ID: 55 ,IP: 2 )), ]
+[Sun Feb 22 18:45:46 2026] [INFO] 节点加入: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 18:45:46 2026] [INFO] joinRing: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 18:45:46 2026] [INFO] initWithBootstrapNode: self=Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:45:46 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Sun Feb 22 18:45:46 2026] [INFO] 节点 Node(ID: 55 ,IP: 2 ) 初始化完成
+[Sun Feb 22 18:45:46 2026] [INFO] Init Chord Node(ID: 218 ,IP: 3 ) with finger table: [(219, Node(ID: 218 ,IP: 3 )), (220, Node(ID: 218 ,IP: 3 )), (222, Node(ID: 218 ,IP: 3 )), (226, Node(ID: 218 ,IP: 3 )), (234, Node(ID: 218 ,IP: 3 )), (250, Node(ID: 218 ,IP: 3 )), (26, Node(ID: 218 ,IP: 3 )), (90, Node(ID: 218 ,IP: 3 )), ]
+[Sun Feb 22 18:45:46 2026] [INFO] 节点加入: Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 18:45:46 2026] [INFO] joinRing: Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 18:45:46 2026] [INFO] initWithBootstrapNode: self=Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 18:45:46 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Sun Feb 22 18:45:46 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 18:45:46 2026] [INFO] 节点 Node(ID: 218 ,IP: 3 ) 初始化完成
+[Sun Feb 22 18:45:50 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 18:45:50 2026] [INFO] 节点数: 3
+[Sun Feb 22 19:50:54 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 19:50:54 2026] [INFO] Node(ID: 43 ,IP: 1 ) 已离开
+[Sun Feb 22 19:50:54 2026] [INFO] Destroy Chord Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 19:50:54 2026] [INFO] 节点移除: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 19:50:54 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:50:54 2026] [INFO] Node(ID: 55 ,IP: 2 ) 已离开
+[Sun Feb 22 19:50:54 2026] [INFO] Destroy Chord Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 19:50:54 2026] [INFO] 节点移除: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 19:52:40 2026] [INFO] Init Chord Node(ID: 55 ,IP: 2 ) with finger table: [(56, Node(ID: 55 ,IP: 2 )), (57, Node(ID: 55 ,IP: 2 )), (59, Node(ID: 55 ,IP: 2 )), (63, Node(ID: 55 ,IP: 2 )), (71, Node(ID: 55 ,IP: 2 )), (87, Node(ID: 55 ,IP: 2 )), (119, Node(ID: 55 ,IP: 2 )), (183, Node(ID: 55 ,IP: 2 )), ]
+[Sun Feb 22 19:52:40 2026] [INFO] 节点加入: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 19:52:40 2026] [INFO] joinRing: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 19:52:40 2026] [INFO] initWithBootstrapNode: self=Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:52:40 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 218 ,IP: 3 ), successorNode == bootstrapNode: true
+[Sun Feb 22 19:52:40 2026] [INFO] 节点 Node(ID: 55 ,IP: 2 ) 初始化完成
+[Sun Feb 22 19:54:50 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:54:50 2026] [INFO] Node(ID: 55 ,IP: 2 ) 已离开
+[Sun Feb 22 19:54:50 2026] [INFO] Destroy Chord Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 19:54:50 2026] [INFO] 节点移除: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 19:55:42 2026] [INFO] 资源 'a' -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:55:42 2026] [INFO] 资源 'b' -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:55:42 2026] [INFO] 资源 'c' -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:55:42 2026] [INFO] 资源 'd' -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:55:42 2026] [INFO] 资源 'e' -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:55:42 2026] [INFO] 资源 'f' -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:55:42 2026] [INFO] 资源 'g' -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:55:48 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 19:55:48 2026] [INFO] 节点数: 1
+[Sun Feb 22 19:56:17 2026] [INFO] Init Chord Node(ID: 55 ,IP: 2 ) with finger table: [(56, Node(ID: 55 ,IP: 2 )), (57, Node(ID: 55 ,IP: 2 )), (59, Node(ID: 55 ,IP: 2 )), (63, Node(ID: 55 ,IP: 2 )), (71, Node(ID: 55 ,IP: 2 )), (87, Node(ID: 55 ,IP: 2 )), (119, Node(ID: 55 ,IP: 2 )), (183, Node(ID: 55 ,IP: 2 )), ]
+[Sun Feb 22 19:56:17 2026] [INFO] 节点加入: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 19:56:17 2026] [INFO] joinRing: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 19:56:17 2026] [INFO] initWithBootstrapNode: self=Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 19:56:17 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 218 ,IP: 3 ), successorNode == bootstrapNode: true
+[Sun Feb 22 19:56:17 2026] [INFO] 节点 Node(ID: 55 ,IP: 2 ) 初始化完成
+[Sun Feb 22 20:23:42 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 20:23:42 2026] [INFO] 节点数: 2
+[Sun Feb 22 20:23:58 2026] [WARNING] 节点IP 3 已存在，无法重复添加
+[Sun Feb 22 20:23:58 2026] [INFO] Init Chord Node(ID: 137 ,IP: 4 ) with finger table: [(138, Node(ID: 137 ,IP: 4 )), (139, Node(ID: 137 ,IP: 4 )), (141, Node(ID: 137 ,IP: 4 )), (145, Node(ID: 137 ,IP: 4 )), (153, Node(ID: 137 ,IP: 4 )), (169, Node(ID: 137 ,IP: 4 )), (201, Node(ID: 137 ,IP: 4 )), (9, Node(ID: 137 ,IP: 4 )), ]
+[Sun Feb 22 20:23:58 2026] [INFO] 节点加入: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 20:23:58 2026] [INFO] joinRing: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 20:23:58 2026] [INFO] initWithBootstrapNode: self=Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 20:23:58 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 55 ,IP: 2 ), successorNode == bootstrapNode: false
+[Sun Feb 22 20:23:58 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 20:23:58 2026] [INFO] 节点 Node(ID: 137 ,IP: 4 ) 初始化完成
+[Sun Feb 22 20:23:58 2026] [WARNING] 节点IP 4 已存在，无法重复添加
+[Sun Feb 22 20:24:48 2026] [INFO] 资源 'h' -> Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 20:26:16 2026] [WARNING] 节点IP 9 不存在，无法删除
+[Sun Feb 22 20:26:54 2026] [WARNING] 节点IP 8 不存在，无法删除
+[Sun Feb 22 20:26:54 2026] [WARNING] 节点IP 9 不存在，无法删除
+[Sun Feb 22 20:30:32 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 20:30:32 2026] [INFO] Node(ID: 137 ,IP: 4 ) 已离开
+[Sun Feb 22 20:30:32 2026] [INFO] Destroy Chord Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 20:30:32 2026] [INFO] 节点移除: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 20:59:59 2026] === 程序启动 ===
+[Sun Feb 22 20:59:59 2026] 时间: Sun Feb 22 20:59:59 2026
+[Sun Feb 22 21:00:24 2026] === 程序结束 ===
+[Sun Feb 22 21:26:50 2026] === 程序结束 ===
+[Sun Feb 22 21:44:19 2026] === 程序启动 ===
+[Sun Feb 22 21:44:19 2026] 时间: Sun Feb 22 21:44:19 2026
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) with finger table: [(44, Node(ID: 43 ,IP: 1 )), (45, Node(ID: 43 ,IP: 1 )), (47, Node(ID: 43 ,IP: 1 )), (51, Node(ID: 43 ,IP: 1 )), (59, Node(ID: 43 ,IP: 1 )), (75, Node(ID: 43 ,IP: 1 )), (107, Node(ID: 43 ,IP: 1 )), (171, Node(ID: 43 ,IP: 1 )), ]
+[Sun Feb 22 21:46:17 2026] [INFO] 节点加入: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] joinRing: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) as the first node in the ring.
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 55 ,IP: 2 ) with finger table: [(56, Node(ID: 55 ,IP: 2 )), (57, Node(ID: 55 ,IP: 2 )), (59, Node(ID: 55 ,IP: 2 )), (63, Node(ID: 55 ,IP: 2 )), (71, Node(ID: 55 ,IP: 2 )), (87, Node(ID: 55 ,IP: 2 )), (119, Node(ID: 55 ,IP: 2 )), (183, Node(ID: 55 ,IP: 2 )), ]
+[Sun Feb 22 21:46:17 2026] [INFO] 节点加入: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 21:46:17 2026] [INFO] joinRing: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 21:46:17 2026] [INFO] initWithBootstrapNode: self=Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Sun Feb 22 21:46:17 2026] [INFO] 节点 Node(ID: 55 ,IP: 2 ) 初始化完成
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 218 ,IP: 3 ) with finger table: [(219, Node(ID: 218 ,IP: 3 )), (220, Node(ID: 218 ,IP: 3 )), (222, Node(ID: 218 ,IP: 3 )), (226, Node(ID: 218 ,IP: 3 )), (234, Node(ID: 218 ,IP: 3 )), (250, Node(ID: 218 ,IP: 3 )), (26, Node(ID: 218 ,IP: 3 )), (90, Node(ID: 218 ,IP: 3 )), ]
+[Sun Feb 22 21:46:17 2026] [INFO] 节点加入: Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 21:46:17 2026] [INFO] joinRing: Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 21:46:17 2026] [INFO] initWithBootstrapNode: self=Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Sun Feb 22 21:46:17 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 21:46:17 2026] [INFO] 节点 Node(ID: 218 ,IP: 3 ) 初始化完成
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 137 ,IP: 4 ) with finger table: [(138, Node(ID: 137 ,IP: 4 )), (139, Node(ID: 137 ,IP: 4 )), (141, Node(ID: 137 ,IP: 4 )), (145, Node(ID: 137 ,IP: 4 )), (153, Node(ID: 137 ,IP: 4 )), (169, Node(ID: 137 ,IP: 4 )), (201, Node(ID: 137 ,IP: 4 )), (9, Node(ID: 137 ,IP: 4 )), ]
+[Sun Feb 22 21:46:17 2026] [INFO] 节点加入: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 21:46:17 2026] [INFO] joinRing: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 21:46:17 2026] [INFO] initWithBootstrapNode: self=Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 21:46:17 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 21:46:17 2026] [INFO] 节点 Node(ID: 137 ,IP: 4 ) 初始化完成
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 214 ,IP: 5 ) with finger table: [(215, Node(ID: 214 ,IP: 5 )), (216, Node(ID: 214 ,IP: 5 )), (218, Node(ID: 214 ,IP: 5 )), (222, Node(ID: 214 ,IP: 5 )), (230, Node(ID: 214 ,IP: 5 )), (246, Node(ID: 214 ,IP: 5 )), (22, Node(ID: 214 ,IP: 5 )), (86, Node(ID: 214 ,IP: 5 )), ]
+[Sun Feb 22 21:46:17 2026] [INFO] 节点加入: Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 21:46:17 2026] [INFO] joinRing: Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 21:46:17 2026] [INFO] initWithBootstrapNode: self=Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 21:46:17 2026] [INFO] setSuccessor: Node(ID: 137 ,IP: 4 ) -> Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 21:46:17 2026] [INFO] 节点 Node(ID: 214 ,IP: 5 ) 初始化完成
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 110 ,IP: 6 ) with finger table: [(111, Node(ID: 110 ,IP: 6 )), (112, Node(ID: 110 ,IP: 6 )), (114, Node(ID: 110 ,IP: 6 )), (118, Node(ID: 110 ,IP: 6 )), (126, Node(ID: 110 ,IP: 6 )), (142, Node(ID: 110 ,IP: 6 )), (174, Node(ID: 110 ,IP: 6 )), (238, Node(ID: 110 ,IP: 6 )), ]
+[Sun Feb 22 21:46:17 2026] [INFO] 节点加入: Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 21:46:17 2026] [INFO] joinRing: Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 21:46:17 2026] [INFO] initWithBootstrapNode: self=Node(ID: 110 ,IP: 6 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] 找到后继: Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 21:46:17 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 21:46:17 2026] [INFO] 节点 Node(ID: 110 ,IP: 6 ) 初始化完成
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 205 ,IP: 7 ) with finger table: [(206, Node(ID: 205 ,IP: 7 )), (207, Node(ID: 205 ,IP: 7 )), (209, Node(ID: 205 ,IP: 7 )), (213, Node(ID: 205 ,IP: 7 )), (221, Node(ID: 205 ,IP: 7 )), (237, Node(ID: 205 ,IP: 7 )), (13, Node(ID: 205 ,IP: 7 )), (77, Node(ID: 205 ,IP: 7 )), ]
+[Sun Feb 22 21:46:17 2026] [INFO] 节点加入: Node(ID: 205 ,IP: 7 )
+[Sun Feb 22 21:46:17 2026] [INFO] joinRing: Node(ID: 205 ,IP: 7 )
+[Sun Feb 22 21:46:17 2026] [INFO] initWithBootstrapNode: self=Node(ID: 205 ,IP: 7 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] 找到后继: Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 21:46:17 2026] [INFO] setSuccessor: Node(ID: 137 ,IP: 4 ) -> Node(ID: 205 ,IP: 7 )
+[Sun Feb 22 21:46:17 2026] [INFO] 节点 Node(ID: 205 ,IP: 7 ) 初始化完成
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 206 ,IP: 8 ) with finger table: [(207, Node(ID: 206 ,IP: 8 )), (208, Node(ID: 206 ,IP: 8 )), (210, Node(ID: 206 ,IP: 8 )), (214, Node(ID: 206 ,IP: 8 )), (222, Node(ID: 206 ,IP: 8 )), (238, Node(ID: 206 ,IP: 8 )), (14, Node(ID: 206 ,IP: 8 )), (78, Node(ID: 206 ,IP: 8 )), ]
+[Sun Feb 22 21:46:17 2026] [INFO] 节点加入: Node(ID: 206 ,IP: 8 )
+[Sun Feb 22 21:46:17 2026] [INFO] joinRing: Node(ID: 206 ,IP: 8 )
+[Sun Feb 22 21:46:17 2026] [INFO] initWithBootstrapNode: self=Node(ID: 206 ,IP: 8 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] 找到后继: Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 21:46:17 2026] [INFO] setSuccessor: Node(ID: 205 ,IP: 7 ) -> Node(ID: 206 ,IP: 8 )
+[Sun Feb 22 21:46:17 2026] [INFO] 节点 Node(ID: 206 ,IP: 8 ) 初始化完成
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 44 ,IP: 9 ) with finger table: [(45, Node(ID: 44 ,IP: 9 )), (46, Node(ID: 44 ,IP: 9 )), (48, Node(ID: 44 ,IP: 9 )), (52, Node(ID: 44 ,IP: 9 )), (60, Node(ID: 44 ,IP: 9 )), (76, Node(ID: 44 ,IP: 9 )), (108, Node(ID: 44 ,IP: 9 )), (172, Node(ID: 44 ,IP: 9 )), ]
+[Sun Feb 22 21:46:17 2026] [INFO] 节点加入: Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 21:46:17 2026] [INFO] joinRing: Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 21:46:17 2026] [INFO] initWithBootstrapNode: self=Node(ID: 44 ,IP: 9 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] 找到后继: Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 21:46:17 2026] [INFO] setSuccessor: Node(ID: 43 ,IP: 1 ) -> Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 21:46:17 2026] [INFO] 节点 Node(ID: 44 ,IP: 9 ) 初始化完成
+[Sun Feb 22 21:46:17 2026] [INFO] Init Chord Node(ID: 198 ,IP: 0 ) with finger table: [(199, Node(ID: 198 ,IP: 0 )), (200, Node(ID: 198 ,IP: 0 )), (202, Node(ID: 198 ,IP: 0 )), (206, Node(ID: 198 ,IP: 0 )), (214, Node(ID: 198 ,IP: 0 )), (230, Node(ID: 198 ,IP: 0 )), (6, Node(ID: 198 ,IP: 0 )), (70, Node(ID: 198 ,IP: 0 )), ]
+[Sun Feb 22 21:46:17 2026] [INFO] 节点加入: Node(ID: 198 ,IP: 0 )
+[Sun Feb 22 21:46:17 2026] [INFO] joinRing: Node(ID: 198 ,IP: 0 )
+[Sun Feb 22 21:46:17 2026] [INFO] initWithBootstrapNode: self=Node(ID: 198 ,IP: 0 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 21:46:17 2026] [INFO] 找到后继: Node(ID: 205 ,IP: 7 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 21:46:17 2026] [INFO] setSuccessor: Node(ID: 137 ,IP: 4 ) -> Node(ID: 198 ,IP: 0 )
+[Sun Feb 22 21:46:17 2026] [INFO] 节点 Node(ID: 198 ,IP: 0 ) 初始化完成
+[Sun Feb 22 21:46:19 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 21:46:19 2026] [INFO] 节点数: 10
+[Sun Feb 22 21:59:37 2026] [INFO] setSuccessor: Node(ID: 43 ,IP: 1 ) -> Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 21:59:37 2026] [INFO] Node(ID: 44 ,IP: 9 ) 已离开
+[Sun Feb 22 21:59:37 2026] [INFO] Destroy Chord Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 21:59:37 2026] [INFO] 节点移除: Node(ID: 44 ,IP: 9 )
+[Sun Feb 22 21:59:37 2026] [INFO] setSuccessor: Node(ID: 137 ,IP: 4 ) -> Node(ID: 205 ,IP: 7 )
+[Sun Feb 22 21:59:37 2026] [INFO] Node(ID: 198 ,IP: 0 ) 已离开
+[Sun Feb 22 21:59:37 2026] [INFO] Destroy Chord Node(ID: 198 ,IP: 0 )
+[Sun Feb 22 21:59:37 2026] [INFO] 节点移除: Node(ID: 198 ,IP: 0 )
+[Sun Feb 22 21:59:37 2026] [WARNING] 节点IP 0 不存在，无法删除
+[Sun Feb 22 21:59:37 2026] [WARNING] 节点IP 9 不存在，无法删除
+[Sun Feb 22 22:07:20 2026] === 程序结束 ===
+[Sun Feb 22 22:08:15 2026] === 程序启动 ===
+[Sun Feb 22 22:08:15 2026] 时间: Sun Feb 22 22:08:15 2026
+[Sun Feb 22 22:12:02 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) with finger table: [(44, Node(ID: 43 ,IP: 1 )), (45, Node(ID: 43 ,IP: 1 )), (47, Node(ID: 43 ,IP: 1 )), (51, Node(ID: 43 ,IP: 1 )), (59, Node(ID: 43 ,IP: 1 )), (75, Node(ID: 43 ,IP: 1 )), (107, Node(ID: 43 ,IP: 1 )), (171, Node(ID: 43 ,IP: 1 )), ]
+[Sun Feb 22 22:12:02 2026] [INFO] 节点加入: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:02 2026] [INFO] joinRing: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:02 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) as the first node in the ring.
+[Sun Feb 22 22:12:04 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 22:12:04 2026] [INFO] 节点数: 1
+[Sun Feb 22 22:12:35 2026] [INFO] 资源 'a' -> Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:35 2026] [INFO] 资源 'b' -> Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:35 2026] [INFO] 资源 'c' -> Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:35 2026] [INFO] 资源 'd' -> Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:35 2026] [INFO] 资源 'e' -> Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:35 2026] [INFO] 资源 'f' -> Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:35 2026] [INFO] 资源 'g' -> Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:35 2026] [INFO] 资源 'h' -> Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:39 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 22:12:39 2026] [INFO] 节点数: 1
+[Sun Feb 22 22:12:46 2026] [INFO] Init Chord Node(ID: 55 ,IP: 2 ) with finger table: [(56, Node(ID: 55 ,IP: 2 )), (57, Node(ID: 55 ,IP: 2 )), (59, Node(ID: 55 ,IP: 2 )), (63, Node(ID: 55 ,IP: 2 )), (71, Node(ID: 55 ,IP: 2 )), (87, Node(ID: 55 ,IP: 2 )), (119, Node(ID: 55 ,IP: 2 )), (183, Node(ID: 55 ,IP: 2 )), ]
+[Sun Feb 22 22:12:46 2026] [INFO] 节点加入: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 22:12:46 2026] [INFO] joinRing: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 22:12:46 2026] [INFO] initWithBootstrapNode: self=Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:12:46 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Sun Feb 22 22:12:46 2026] [INFO] 节点 Node(ID: 55 ,IP: 2 ) 初始化完成
+[Sun Feb 22 22:12:48 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 22:12:48 2026] [INFO] 节点数: 2
+[Sun Feb 22 22:13:41 2026] [INFO] Init Chord Node(ID: 218 ,IP: 3 ) with finger table: [(219, Node(ID: 218 ,IP: 3 )), (220, Node(ID: 218 ,IP: 3 )), (222, Node(ID: 218 ,IP: 3 )), (226, Node(ID: 218 ,IP: 3 )), (234, Node(ID: 218 ,IP: 3 )), (250, Node(ID: 218 ,IP: 3 )), (26, Node(ID: 218 ,IP: 3 )), (90, Node(ID: 218 ,IP: 3 )), ]
+[Sun Feb 22 22:13:41 2026] [INFO] 节点加入: Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 22:13:41 2026] [INFO] joinRing: Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 22:13:41 2026] [INFO] initWithBootstrapNode: self=Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:13:41 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Sun Feb 22 22:13:41 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 22:13:41 2026] [INFO] 节点 Node(ID: 218 ,IP: 3 ) 初始化完成
+[Sun Feb 22 22:13:41 2026] [INFO] Init Chord Node(ID: 137 ,IP: 4 ) with finger table: [(138, Node(ID: 137 ,IP: 4 )), (139, Node(ID: 137 ,IP: 4 )), (141, Node(ID: 137 ,IP: 4 )), (145, Node(ID: 137 ,IP: 4 )), (153, Node(ID: 137 ,IP: 4 )), (169, Node(ID: 137 ,IP: 4 )), (201, Node(ID: 137 ,IP: 4 )), (9, Node(ID: 137 ,IP: 4 )), ]
+[Sun Feb 22 22:13:41 2026] [INFO] 节点加入: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 22:13:41 2026] [INFO] joinRing: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 22:13:41 2026] [INFO] initWithBootstrapNode: self=Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:13:41 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 22:13:41 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 22:13:41 2026] [INFO] 节点 Node(ID: 137 ,IP: 4 ) 初始化完成
+[Sun Feb 22 22:13:41 2026] [INFO] Init Chord Node(ID: 214 ,IP: 5 ) with finger table: [(215, Node(ID: 214 ,IP: 5 )), (216, Node(ID: 214 ,IP: 5 )), (218, Node(ID: 214 ,IP: 5 )), (222, Node(ID: 214 ,IP: 5 )), (230, Node(ID: 214 ,IP: 5 )), (246, Node(ID: 214 ,IP: 5 )), (22, Node(ID: 214 ,IP: 5 )), (86, Node(ID: 214 ,IP: 5 )), ]
+[Sun Feb 22 22:13:41 2026] [INFO] 节点加入: Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 22:13:41 2026] [INFO] joinRing: Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 22:13:41 2026] [INFO] initWithBootstrapNode: self=Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:13:41 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 22:13:41 2026] [INFO] setSuccessor: Node(ID: 137 ,IP: 4 ) -> Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 22:13:41 2026] [INFO] 节点 Node(ID: 214 ,IP: 5 ) 初始化完成
+[Sun Feb 22 22:13:41 2026] [INFO] Init Chord Node(ID: 110 ,IP: 6 ) with finger table: [(111, Node(ID: 110 ,IP: 6 )), (112, Node(ID: 110 ,IP: 6 )), (114, Node(ID: 110 ,IP: 6 )), (118, Node(ID: 110 ,IP: 6 )), (126, Node(ID: 110 ,IP: 6 )), (142, Node(ID: 110 ,IP: 6 )), (174, Node(ID: 110 ,IP: 6 )), (238, Node(ID: 110 ,IP: 6 )), ]
+[Sun Feb 22 22:13:41 2026] [INFO] 节点加入: Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 22:13:41 2026] [INFO] joinRing: Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 22:13:41 2026] [INFO] initWithBootstrapNode: self=Node(ID: 110 ,IP: 6 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:13:41 2026] [INFO] 找到后继: Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Sun Feb 22 22:13:41 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 22:13:41 2026] [INFO] 节点 Node(ID: 110 ,IP: 6 ) 初始化完成
+[Sun Feb 22 22:19:53 2026] [INFO] 资源 'a' 从节点 Node(ID: 55 ,IP: 2 ) 移除
+[Sun Feb 22 22:20:09 2026] [INFO] 资源 'b' 从节点 Node(ID: 110 ,IP: 6 ) 移除
+[Sun Feb 22 22:20:29 2026] [INFO] 资源 'c' 从节点 Node(ID: 137 ,IP: 4 ) 移除
+[Sun Feb 22 22:23:01 2026] [WARNING] 节点IP 0 不存在，无法删除
+[Sun Feb 22 22:23:01 2026] [WARNING] 节点IP 9 不存在，无法删除
+[Sun Feb 22 22:23:39 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 22:23:39 2026] [INFO] 节点数: 6
+[Sun Feb 22 22:24:42 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 22:24:42 2026] [INFO] Node(ID: 43 ,IP: 1 ) 已离开
+[Sun Feb 22 22:24:42 2026] [INFO] Destroy Chord Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:24:42 2026] [INFO] 节点移除: Node(ID: 43 ,IP: 1 )
+[Sun Feb 22 22:24:42 2026] [WARNING] 节点IP 1 不存在，无法删除
+[Sun Feb 22 22:24:46 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 22:24:46 2026] [INFO] 节点数: 5
+[Sun Feb 22 22:27:47 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 22:27:47 2026] [INFO] 节点数: 5
+[Sun Feb 22 22:28:29 2026] [INFO] Init Chord Node(ID: 21 ,IP: 123 ) with finger table: [(22, Node(ID: 21 ,IP: 123 )), (23, Node(ID: 21 ,IP: 123 )), (25, Node(ID: 21 ,IP: 123 )), (29, Node(ID: 21 ,IP: 123 )), (37, Node(ID: 21 ,IP: 123 )), (53, Node(ID: 21 ,IP: 123 )), (85, Node(ID: 21 ,IP: 123 )), (149, Node(ID: 21 ,IP: 123 )), ]
+[Sun Feb 22 22:28:29 2026] [INFO] 节点加入: Node(ID: 21 ,IP: 123 )
+[Sun Feb 22 22:28:29 2026] [INFO] joinRing: Node(ID: 21 ,IP: 123 )
+[Sun Feb 22 22:28:29 2026] [INFO] initWithBootstrapNode: self=Node(ID: 21 ,IP: 123 ), bootstrap=Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 22:28:29 2026] [INFO] 找到后继: Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 55 ,IP: 2 ), successorNode == bootstrapNode: true
+[Sun Feb 22 22:28:29 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 21 ,IP: 123 )
+[Sun Feb 22 22:28:29 2026] [INFO] 节点 Node(ID: 21 ,IP: 123 ) 初始化完成
+[Sun Feb 22 22:28:44 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 22:28:44 2026] [INFO] 节点数: 6
+[Sun Feb 22 22:36:30 2026] [INFO] setSuccessor: Node(ID: 21 ,IP: 123 ) -> Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 22:36:30 2026] [INFO] Node(ID: 55 ,IP: 2 ) 已离开
+[Sun Feb 22 22:36:30 2026] [INFO] Destroy Chord Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 22:36:30 2026] [INFO] 节点移除: Node(ID: 55 ,IP: 2 )
+[Sun Feb 22 22:36:30 2026] [INFO] setSuccessor: Node(ID: 214 ,IP: 5 ) -> Node(ID: 21 ,IP: 123 )
+[Sun Feb 22 22:36:30 2026] [INFO] Node(ID: 218 ,IP: 3 ) 已离开
+[Sun Feb 22 22:36:30 2026] [INFO] Destroy Chord Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 22:36:30 2026] [INFO] 节点移除: Node(ID: 218 ,IP: 3 )
+[Sun Feb 22 22:36:30 2026] [INFO] setSuccessor: Node(ID: 110 ,IP: 6 ) -> Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 22:36:30 2026] [INFO] Node(ID: 137 ,IP: 4 ) 已离开
+[Sun Feb 22 22:36:30 2026] [INFO] Destroy Chord Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 22:36:30 2026] [INFO] 节点移除: Node(ID: 137 ,IP: 4 )
+[Sun Feb 22 22:36:30 2026] [INFO] setSuccessor: Node(ID: 110 ,IP: 6 ) -> Node(ID: 21 ,IP: 123 )
+[Sun Feb 22 22:36:30 2026] [INFO] Node(ID: 214 ,IP: 5 ) 已离开
+[Sun Feb 22 22:36:30 2026] [INFO] Destroy Chord Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 22:36:30 2026] [INFO] 节点移除: Node(ID: 214 ,IP: 5 )
+[Sun Feb 22 22:36:32 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 22:36:32 2026] [INFO] 节点数: 2
+[Sun Feb 22 22:36:55 2026] [INFO] setSuccessor: Node(ID: 21 ,IP: 123 ) -> Node(ID: 21 ,IP: 123 )
+[Sun Feb 22 22:36:55 2026] [INFO] Node(ID: 110 ,IP: 6 ) 已离开
+[Sun Feb 22 22:36:55 2026] [INFO] Destroy Chord Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 22:36:55 2026] [INFO] 节点移除: Node(ID: 110 ,IP: 6 )
+[Sun Feb 22 22:36:58 2026] [INFO] ========== Chord Ring ==========
+[Sun Feb 22 22:36:58 2026] [INFO] 节点数: 1
+[Sun Feb 22 22:40:37 2026] [INFO] Destroy Chord Node(ID: 21 ,IP: 123 )
+[Sun Feb 22 22:40:37 2026] [INFO] 节点移除: Node(ID: 21 ,IP: 123 )
+[Sun Feb 22 22:40:43 2026] === 程序结束 ===
+[Wed Feb 25 12:18:06 2026] === 程序启动 ===
+[Wed Feb 25 12:18:06 2026] 时间: Wed Feb 25 12:18:06 2026
+[Wed Feb 25 12:18:06 2026] [INFO] ChordProxy 初始化
+[Wed Feb 25 12:18:06 2026] [INFO] ChordRingManager 初始化
+[Wed Feb 25 12:27:32 2026] === 程序启动 ===
+[Wed Feb 25 12:27:32 2026] 时间: Wed Feb 25 12:27:32 2026
+[Wed Feb 25 12:27:32 2026] [INFO] ChordProxy 初始化
+[Wed Feb 25 12:27:32 2026] [INFO] ChordRingManager 初始化
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 198 ,IP: 0 ) with finger table: [(199, Node(ID: 198 ,IP: 0 )), (200, Node(ID: 198 ,IP: 0 )), (202, Node(ID: 198 ,IP: 0 )), (206, Node(ID: 198 ,IP: 0 )), (214, Node(ID: 198 ,IP: 0 )), (230, Node(ID: 198 ,IP: 0 )), (6, Node(ID: 198 ,IP: 0 )), (70, Node(ID: 198 ,IP: 0 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 198 ,IP: 0 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 198 ,IP: 0 )
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 198 ,IP: 0 ) as the first node in the ring.
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) with finger table: [(44, Node(ID: 43 ,IP: 1 )), (45, Node(ID: 43 ,IP: 1 )), (47, Node(ID: 43 ,IP: 1 )), (51, Node(ID: 43 ,IP: 1 )), (59, Node(ID: 43 ,IP: 1 )), (75, Node(ID: 43 ,IP: 1 )), (107, Node(ID: 43 ,IP: 1 )), (171, Node(ID: 43 ,IP: 1 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 198 ,IP: 0 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 198 ,IP: 0 ), bootstrap=Node(ID: 198 ,IP: 0 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 43 ,IP: 1 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 55 ,IP: 2 ) with finger table: [(56, Node(ID: 55 ,IP: 2 )), (57, Node(ID: 55 ,IP: 2 )), (59, Node(ID: 55 ,IP: 2 )), (63, Node(ID: 55 ,IP: 2 )), (71, Node(ID: 55 ,IP: 2 )), (87, Node(ID: 55 ,IP: 2 )), (119, Node(ID: 55 ,IP: 2 )), (183, Node(ID: 55 ,IP: 2 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 198 ,IP: 0 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 43 ,IP: 1 ) -> Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 55 ,IP: 2 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 218 ,IP: 3 ) with finger table: [(219, Node(ID: 218 ,IP: 3 )), (220, Node(ID: 218 ,IP: 3 )), (222, Node(ID: 218 ,IP: 3 )), (226, Node(ID: 218 ,IP: 3 )), (234, Node(ID: 218 ,IP: 3 )), (250, Node(ID: 218 ,IP: 3 )), (26, Node(ID: 218 ,IP: 3 )), (90, Node(ID: 218 ,IP: 3 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 198 ,IP: 0 ) -> Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 218 ,IP: 3 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 137 ,IP: 4 ) with finger table: [(138, Node(ID: 137 ,IP: 4 )), (139, Node(ID: 137 ,IP: 4 )), (141, Node(ID: 137 ,IP: 4 )), (145, Node(ID: 137 ,IP: 4 )), (153, Node(ID: 137 ,IP: 4 )), (169, Node(ID: 137 ,IP: 4 )), (201, Node(ID: 137 ,IP: 4 )), (9, Node(ID: 137 ,IP: 4 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 137 ,IP: 4 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 137 ,IP: 4 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 198 ,IP: 0 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 137 ,IP: 4 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 137 ,IP: 4 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 214 ,IP: 5 ) with finger table: [(215, Node(ID: 214 ,IP: 5 )), (216, Node(ID: 214 ,IP: 5 )), (218, Node(ID: 214 ,IP: 5 )), (222, Node(ID: 214 ,IP: 5 )), (230, Node(ID: 214 ,IP: 5 )), (246, Node(ID: 214 ,IP: 5 )), (22, Node(ID: 214 ,IP: 5 )), (86, Node(ID: 214 ,IP: 5 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 214 ,IP: 5 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 214 ,IP: 5 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 198 ,IP: 0 ) -> Node(ID: 214 ,IP: 5 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 214 ,IP: 5 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 110 ,IP: 6 ) with finger table: [(111, Node(ID: 110 ,IP: 6 )), (112, Node(ID: 110 ,IP: 6 )), (114, Node(ID: 110 ,IP: 6 )), (118, Node(ID: 110 ,IP: 6 )), (126, Node(ID: 110 ,IP: 6 )), (142, Node(ID: 110 ,IP: 6 )), (174, Node(ID: 110 ,IP: 6 )), (238, Node(ID: 110 ,IP: 6 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 110 ,IP: 6 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 110 ,IP: 6 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 110 ,IP: 6 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 110 ,IP: 6 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 110 ,IP: 6 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 205 ,IP: 7 ) with finger table: [(206, Node(ID: 205 ,IP: 7 )), (207, Node(ID: 205 ,IP: 7 )), (209, Node(ID: 205 ,IP: 7 )), (213, Node(ID: 205 ,IP: 7 )), (221, Node(ID: 205 ,IP: 7 )), (237, Node(ID: 205 ,IP: 7 )), (13, Node(ID: 205 ,IP: 7 )), (77, Node(ID: 205 ,IP: 7 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 205 ,IP: 7 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 205 ,IP: 7 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 205 ,IP: 7 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 198 ,IP: 0 ) -> Node(ID: 205 ,IP: 7 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 205 ,IP: 7 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 206 ,IP: 8 ) with finger table: [(207, Node(ID: 206 ,IP: 8 )), (208, Node(ID: 206 ,IP: 8 )), (210, Node(ID: 206 ,IP: 8 )), (214, Node(ID: 206 ,IP: 8 )), (222, Node(ID: 206 ,IP: 8 )), (238, Node(ID: 206 ,IP: 8 )), (14, Node(ID: 206 ,IP: 8 )), (78, Node(ID: 206 ,IP: 8 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 206 ,IP: 8 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 206 ,IP: 8 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 206 ,IP: 8 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 205 ,IP: 7 ) -> Node(ID: 206 ,IP: 8 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 206 ,IP: 8 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 44 ,IP: 9 ) with finger table: [(45, Node(ID: 44 ,IP: 9 )), (46, Node(ID: 44 ,IP: 9 )), (48, Node(ID: 44 ,IP: 9 )), (52, Node(ID: 44 ,IP: 9 )), (60, Node(ID: 44 ,IP: 9 )), (76, Node(ID: 44 ,IP: 9 )), (108, Node(ID: 44 ,IP: 9 )), (172, Node(ID: 44 ,IP: 9 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 44 ,IP: 9 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 44 ,IP: 9 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 44 ,IP: 9 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 43 ,IP: 1 ) -> Node(ID: 44 ,IP: 9 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 44 ,IP: 9 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 17 ,IP: 10 ) with finger table: [(18, Node(ID: 17 ,IP: 10 )), (19, Node(ID: 17 ,IP: 10 )), (21, Node(ID: 17 ,IP: 10 )), (25, Node(ID: 17 ,IP: 10 )), (33, Node(ID: 17 ,IP: 10 )), (49, Node(ID: 17 ,IP: 10 )), (81, Node(ID: 17 ,IP: 10 )), (145, Node(ID: 17 ,IP: 10 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 17 ,IP: 10 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 17 ,IP: 10 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 145 ,IP: 11 ) with finger table: [(146, Node(ID: 145 ,IP: 11 )), (147, Node(ID: 145 ,IP: 11 )), (149, Node(ID: 145 ,IP: 11 )), (153, Node(ID: 145 ,IP: 11 )), (161, Node(ID: 145 ,IP: 11 )), (177, Node(ID: 145 ,IP: 11 )), (209, Node(ID: 145 ,IP: 11 )), (17, Node(ID: 145 ,IP: 11 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 145 ,IP: 11 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 145 ,IP: 11 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 145 ,IP: 11 ), bootstrap=Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 198 ,IP: 0 ), bootstrap=Node(ID: 17 ,IP: 10 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 137 ,IP: 4 ) -> Node(ID: 145 ,IP: 11 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 145 ,IP: 11 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 155 ,IP: 12 ) with finger table: [(156, Node(ID: 155 ,IP: 12 )), (157, Node(ID: 155 ,IP: 12 )), (159, Node(ID: 155 ,IP: 12 )), (163, Node(ID: 155 ,IP: 12 )), (171, Node(ID: 155 ,IP: 12 )), (187, Node(ID: 155 ,IP: 12 )), (219, Node(ID: 155 ,IP: 12 )), (27, Node(ID: 155 ,IP: 12 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 155 ,IP: 12 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 155 ,IP: 12 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 155 ,IP: 12 ), bootstrap=Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 198 ,IP: 0 ), bootstrap=Node(ID: 17 ,IP: 10 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 145 ,IP: 11 ) -> Node(ID: 155 ,IP: 12 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 155 ,IP: 12 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 62 ,IP: 13 ) with finger table: [(63, Node(ID: 62 ,IP: 13 )), (64, Node(ID: 62 ,IP: 13 )), (66, Node(ID: 62 ,IP: 13 )), (70, Node(ID: 62 ,IP: 13 )), (78, Node(ID: 62 ,IP: 13 )), (94, Node(ID: 62 ,IP: 13 )), (126, Node(ID: 62 ,IP: 13 )), (190, Node(ID: 62 ,IP: 13 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 62 ,IP: 13 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 62 ,IP: 13 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 62 ,IP: 13 ), bootstrap=Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 110 ,IP: 6 ), bootstrap=Node(ID: 17 ,IP: 10 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 62 ,IP: 13 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 62 ,IP: 13 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 146 ,IP: 14 ) with finger table: [(147, Node(ID: 146 ,IP: 14 )), (148, Node(ID: 146 ,IP: 14 )), (150, Node(ID: 146 ,IP: 14 )), (154, Node(ID: 146 ,IP: 14 )), (162, Node(ID: 146 ,IP: 14 )), (178, Node(ID: 146 ,IP: 14 )), (210, Node(ID: 146 ,IP: 14 )), (18, Node(ID: 146 ,IP: 14 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 146 ,IP: 14 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 146 ,IP: 14 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 146 ,IP: 14 ), bootstrap=Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 155 ,IP: 12 ), bootstrap=Node(ID: 17 ,IP: 10 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 145 ,IP: 11 ) -> Node(ID: 146 ,IP: 14 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 146 ,IP: 14 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 112 ,IP: 15 ) with finger table: [(113, Node(ID: 112 ,IP: 15 )), (114, Node(ID: 112 ,IP: 15 )), (116, Node(ID: 112 ,IP: 15 )), (120, Node(ID: 112 ,IP: 15 )), (128, Node(ID: 112 ,IP: 15 )), (144, Node(ID: 112 ,IP: 15 )), (176, Node(ID: 112 ,IP: 15 )), (240, Node(ID: 112 ,IP: 15 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 112 ,IP: 15 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 112 ,IP: 15 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 112 ,IP: 15 ), bootstrap=Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 17 ,IP: 10 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 110 ,IP: 6 ) -> Node(ID: 112 ,IP: 15 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 112 ,IP: 15 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 219 ,IP: 16 ) with finger table: [(220, Node(ID: 219 ,IP: 16 )), (221, Node(ID: 219 ,IP: 16 )), (223, Node(ID: 219 ,IP: 16 )), (227, Node(ID: 219 ,IP: 16 )), (235, Node(ID: 219 ,IP: 16 )), (251, Node(ID: 219 ,IP: 16 )), (27, Node(ID: 219 ,IP: 16 )), (91, Node(ID: 219 ,IP: 16 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 219 ,IP: 16 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 219 ,IP: 16 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 219 ,IP: 16 ), bootstrap=Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 17 ,IP: 10 ), bootstrap=Node(ID: 17 ,IP: 10 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 219 ,IP: 16 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 219 ,IP: 16 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 112 ,IP: 17 ) with finger table: [(113, Node(ID: 112 ,IP: 17 )), (114, Node(ID: 112 ,IP: 17 )), (116, Node(ID: 112 ,IP: 17 )), (120, Node(ID: 112 ,IP: 17 )), (128, Node(ID: 112 ,IP: 17 )), (144, Node(ID: 112 ,IP: 17 )), (176, Node(ID: 112 ,IP: 17 )), (240, Node(ID: 112 ,IP: 17 )), ]
+[Wed Feb 25 12:28:00 2026] [WARNING] 节点已存在: Node(ID: 112 ,IP: 17 )
+[Wed Feb 25 12:28:00 2026] [INFO] Destroy Chord Node(ID: 112 ,IP: 17 )
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 182 ,IP: 18 ) with finger table: [(183, Node(ID: 182 ,IP: 18 )), (184, Node(ID: 182 ,IP: 18 )), (186, Node(ID: 182 ,IP: 18 )), (190, Node(ID: 182 ,IP: 18 )), (198, Node(ID: 182 ,IP: 18 )), (214, Node(ID: 182 ,IP: 18 )), (246, Node(ID: 182 ,IP: 18 )), (54, Node(ID: 182 ,IP: 18 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 182 ,IP: 18 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 182 ,IP: 18 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 182 ,IP: 18 ), bootstrap=Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 198 ,IP: 0 ), bootstrap=Node(ID: 17 ,IP: 10 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 155 ,IP: 12 ) -> Node(ID: 182 ,IP: 18 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 182 ,IP: 18 ) 初始化完成
+[Wed Feb 25 12:28:00 2026] [INFO] Init Chord Node(ID: 246 ,IP: 19 ) with finger table: [(247, Node(ID: 246 ,IP: 19 )), (248, Node(ID: 246 ,IP: 19 )), (250, Node(ID: 246 ,IP: 19 )), (254, Node(ID: 246 ,IP: 19 )), (6, Node(ID: 246 ,IP: 19 )), (22, Node(ID: 246 ,IP: 19 )), (54, Node(ID: 246 ,IP: 19 )), (118, Node(ID: 246 ,IP: 19 )), ]
+[Wed Feb 25 12:28:00 2026] [INFO] 节点加入: Node(ID: 246 ,IP: 19 )
+[Wed Feb 25 12:28:00 2026] [INFO] joinRing: Node(ID: 246 ,IP: 19 )
+[Wed Feb 25 12:28:00 2026] [INFO] initWithBootstrapNode: self=Node(ID: 246 ,IP: 19 ), bootstrap=Node(ID: 17 ,IP: 10 )
+[Wed Feb 25 12:28:00 2026] [INFO] 找到后继: Node(ID: 17 ,IP: 10 ), bootstrap=Node(ID: 17 ,IP: 10 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:28:00 2026] [INFO] setSuccessor: Node(ID: 219 ,IP: 16 ) -> Node(ID: 246 ,IP: 19 )
+[Wed Feb 25 12:28:00 2026] [INFO] 节点 Node(ID: 246 ,IP: 19 ) 初始化完成
+[Wed Feb 25 12:28:49 2026] [INFO] ========== Chord Ring ==========
+[Wed Feb 25 12:28:49 2026] [INFO] 节点数: 19
+[Wed Feb 25 12:30:30 2026] === 程序启动 ===
+[Wed Feb 25 12:30:30 2026] 时间: Wed Feb 25 12:30:30 2026
+[Wed Feb 25 12:30:30 2026] [INFO] ChordProxy 初始化
+[Wed Feb 25 12:30:30 2026] [INFO] ChordRingManager 初始化
+[Wed Feb 25 12:30:37 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) with finger table: [(44, Node(ID: 43 ,IP: 1 )), (45, Node(ID: 43 ,IP: 1 )), (47, Node(ID: 43 ,IP: 1 )), (51, Node(ID: 43 ,IP: 1 )), (59, Node(ID: 43 ,IP: 1 )), (75, Node(ID: 43 ,IP: 1 )), (107, Node(ID: 43 ,IP: 1 )), (171, Node(ID: 43 ,IP: 1 )), ]
+[Wed Feb 25 12:30:37 2026] [INFO] 节点加入: Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:30:37 2026] [INFO] joinRing: Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:30:37 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) as the first node in the ring.
+[Wed Feb 25 12:30:37 2026] [INFO] Init Chord Node(ID: 55 ,IP: 2 ) with finger table: [(56, Node(ID: 55 ,IP: 2 )), (57, Node(ID: 55 ,IP: 2 )), (59, Node(ID: 55 ,IP: 2 )), (63, Node(ID: 55 ,IP: 2 )), (71, Node(ID: 55 ,IP: 2 )), (87, Node(ID: 55 ,IP: 2 )), (119, Node(ID: 55 ,IP: 2 )), (183, Node(ID: 55 ,IP: 2 )), ]
+[Wed Feb 25 12:30:37 2026] [INFO] 节点加入: Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:30:37 2026] [INFO] joinRing: Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:30:37 2026] [INFO] initWithBootstrapNode: self=Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:30:37 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:30:37 2026] [INFO] 节点 Node(ID: 55 ,IP: 2 ) 初始化完成
+[Wed Feb 25 12:30:37 2026] [INFO] Init Chord Node(ID: 218 ,IP: 3 ) with finger table: [(219, Node(ID: 218 ,IP: 3 )), (220, Node(ID: 218 ,IP: 3 )), (222, Node(ID: 218 ,IP: 3 )), (226, Node(ID: 218 ,IP: 3 )), (234, Node(ID: 218 ,IP: 3 )), (250, Node(ID: 218 ,IP: 3 )), (26, Node(ID: 218 ,IP: 3 )), (90, Node(ID: 218 ,IP: 3 )), ]
+[Wed Feb 25 12:30:37 2026] [INFO] 节点加入: Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:30:37 2026] [INFO] joinRing: Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:30:37 2026] [INFO] initWithBootstrapNode: self=Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:30:37 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:30:37 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:30:37 2026] [INFO] 节点 Node(ID: 218 ,IP: 3 ) 初始化完成
+[Wed Feb 25 12:30:37 2026] [INFO] Init Chord Node(ID: 137 ,IP: 4 ) with finger table: [(138, Node(ID: 137 ,IP: 4 )), (139, Node(ID: 137 ,IP: 4 )), (141, Node(ID: 137 ,IP: 4 )), (145, Node(ID: 137 ,IP: 4 )), (153, Node(ID: 137 ,IP: 4 )), (169, Node(ID: 137 ,IP: 4 )), (201, Node(ID: 137 ,IP: 4 )), (9, Node(ID: 137 ,IP: 4 )), ]
+[Wed Feb 25 12:30:37 2026] [INFO] 节点加入: Node(ID: 137 ,IP: 4 )
+[Wed Feb 25 12:30:37 2026] [INFO] joinRing: Node(ID: 137 ,IP: 4 )
+[Wed Feb 25 12:30:37 2026] [INFO] initWithBootstrapNode: self=Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:30:37 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:30:37 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 137 ,IP: 4 )
+[Wed Feb 25 12:30:37 2026] [INFO] 节点 Node(ID: 137 ,IP: 4 ) 初始化完成
+[Wed Feb 25 12:30:37 2026] [INFO] Init Chord Node(ID: 214 ,IP: 5 ) with finger table: [(215, Node(ID: 214 ,IP: 5 )), (216, Node(ID: 214 ,IP: 5 )), (218, Node(ID: 214 ,IP: 5 )), (222, Node(ID: 214 ,IP: 5 )), (230, Node(ID: 214 ,IP: 5 )), (246, Node(ID: 214 ,IP: 5 )), (22, Node(ID: 214 ,IP: 5 )), (86, Node(ID: 214 ,IP: 5 )), ]
+[Wed Feb 25 12:30:37 2026] [INFO] 节点加入: Node(ID: 214 ,IP: 5 )
+[Wed Feb 25 12:30:37 2026] [INFO] joinRing: Node(ID: 214 ,IP: 5 )
+[Wed Feb 25 12:30:37 2026] [INFO] initWithBootstrapNode: self=Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:30:37 2026] [INFO] 找到后继: Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:30:37 2026] [INFO] setSuccessor: Node(ID: 137 ,IP: 4 ) -> Node(ID: 214 ,IP: 5 )
+[Wed Feb 25 12:30:37 2026] [INFO] 节点 Node(ID: 214 ,IP: 5 ) 初始化完成
+[Wed Feb 25 12:30:37 2026] [INFO] Init Chord Node(ID: 110 ,IP: 6 ) with finger table: [(111, Node(ID: 110 ,IP: 6 )), (112, Node(ID: 110 ,IP: 6 )), (114, Node(ID: 110 ,IP: 6 )), (118, Node(ID: 110 ,IP: 6 )), (126, Node(ID: 110 ,IP: 6 )), (142, Node(ID: 110 ,IP: 6 )), (174, Node(ID: 110 ,IP: 6 )), (238, Node(ID: 110 ,IP: 6 )), ]
+[Wed Feb 25 12:30:37 2026] [INFO] 节点加入: Node(ID: 110 ,IP: 6 )
+[Wed Feb 25 12:30:37 2026] [INFO] joinRing: Node(ID: 110 ,IP: 6 )
+[Wed Feb 25 12:30:37 2026] [INFO] initWithBootstrapNode: self=Node(ID: 110 ,IP: 6 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:30:37 2026] [INFO] 找到后继: Node(ID: 137 ,IP: 4 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:30:37 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 110 ,IP: 6 )
+[Wed Feb 25 12:30:37 2026] [INFO] 节点 Node(ID: 110 ,IP: 6 ) 初始化完成
+[Wed Feb 25 12:30:37 2026] [INFO] Init Chord Node(ID: 205 ,IP: 7 ) with finger table: [(206, Node(ID: 205 ,IP: 7 )), (207, Node(ID: 205 ,IP: 7 )), (209, Node(ID: 205 ,IP: 7 )), (213, Node(ID: 205 ,IP: 7 )), (221, Node(ID: 205 ,IP: 7 )), (237, Node(ID: 205 ,IP: 7 )), (13, Node(ID: 205 ,IP: 7 )), (77, Node(ID: 205 ,IP: 7 )), ]
+[Wed Feb 25 12:30:37 2026] [INFO] 节点加入: Node(ID: 205 ,IP: 7 )
+[Wed Feb 25 12:30:37 2026] [INFO] joinRing: Node(ID: 205 ,IP: 7 )
+[Wed Feb 25 12:30:37 2026] [INFO] initWithBootstrapNode: self=Node(ID: 205 ,IP: 7 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:30:37 2026] [INFO] 找到后继: Node(ID: 214 ,IP: 5 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: false
+[Wed Feb 25 12:30:37 2026] [INFO] setSuccessor: Node(ID: 137 ,IP: 4 ) -> Node(ID: 205 ,IP: 7 )
+[Wed Feb 25 12:30:37 2026] [INFO] 节点 Node(ID: 205 ,IP: 7 ) 初始化完成
+[Wed Feb 25 12:30:39 2026] [INFO] ========== Chord Ring ==========
+[Wed Feb 25 12:30:39 2026] [INFO] 节点数: 7
+[Wed Feb 25 12:30:45 2026] [INFO] ========== Chord Ring ==========
+[Wed Feb 25 12:30:45 2026] [INFO] 节点数: 7
+[Wed Feb 25 12:31:46 2026] === 程序启动 ===
+[Wed Feb 25 12:31:46 2026] 时间: Wed Feb 25 12:31:46 2026
+[Wed Feb 25 12:31:46 2026] [INFO] ChordProxy 初始化
+[Wed Feb 25 12:31:46 2026] [INFO] ChordRingManager 初始化
+[Wed Feb 25 12:31:56 2026] [INFO] ========== Chord Ring ==========
+[Wed Feb 25 12:31:56 2026] [INFO] 节点数: 0
+[Wed Feb 25 12:32:02 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) with finger table: [(44, Node(ID: 43 ,IP: 1 )), (45, Node(ID: 43 ,IP: 1 )), (47, Node(ID: 43 ,IP: 1 )), (51, Node(ID: 43 ,IP: 1 )), (59, Node(ID: 43 ,IP: 1 )), (75, Node(ID: 43 ,IP: 1 )), (107, Node(ID: 43 ,IP: 1 )), (171, Node(ID: 43 ,IP: 1 )), ]
+[Wed Feb 25 12:32:02 2026] [INFO] 节点加入: Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:32:02 2026] [INFO] joinRing: Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:32:02 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) as the first node in the ring.
+[Wed Feb 25 12:32:02 2026] [INFO] Init Chord Node(ID: 55 ,IP: 2 ) with finger table: [(56, Node(ID: 55 ,IP: 2 )), (57, Node(ID: 55 ,IP: 2 )), (59, Node(ID: 55 ,IP: 2 )), (63, Node(ID: 55 ,IP: 2 )), (71, Node(ID: 55 ,IP: 2 )), (87, Node(ID: 55 ,IP: 2 )), (119, Node(ID: 55 ,IP: 2 )), (183, Node(ID: 55 ,IP: 2 )), ]
+[Wed Feb 25 12:32:02 2026] [INFO] 节点加入: Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:32:02 2026] [INFO] joinRing: Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:32:02 2026] [INFO] initWithBootstrapNode: self=Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:32:02 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:32:02 2026] [INFO] 节点 Node(ID: 55 ,IP: 2 ) 初始化完成
+[Wed Feb 25 12:32:02 2026] [INFO] Init Chord Node(ID: 218 ,IP: 3 ) with finger table: [(219, Node(ID: 218 ,IP: 3 )), (220, Node(ID: 218 ,IP: 3 )), (222, Node(ID: 218 ,IP: 3 )), (226, Node(ID: 218 ,IP: 3 )), (234, Node(ID: 218 ,IP: 3 )), (250, Node(ID: 218 ,IP: 3 )), (26, Node(ID: 218 ,IP: 3 )), (90, Node(ID: 218 ,IP: 3 )), ]
+[Wed Feb 25 12:32:02 2026] [INFO] 节点加入: Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:32:02 2026] [INFO] joinRing: Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:32:02 2026] [INFO] initWithBootstrapNode: self=Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:32:02 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:32:02 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:32:02 2026] [INFO] 节点 Node(ID: 218 ,IP: 3 ) 初始化完成
+[Wed Feb 25 12:32:42 2026] === 程序启动 ===
+[Wed Feb 25 12:32:42 2026] 时间: Wed Feb 25 12:32:42 2026
+[Wed Feb 25 12:32:42 2026] [INFO] ChordProxy 初始化
+[Wed Feb 25 12:32:42 2026] [INFO] ChordRingManager 初始化
+[Wed Feb 25 12:32:49 2026] === 程序结束 ===
+[Wed Feb 25 12:32:52 2026] === 程序启动 ===
+[Wed Feb 25 12:32:52 2026] 时间: Wed Feb 25 12:32:52 2026
+[Wed Feb 25 12:32:52 2026] [INFO] ChordProxy 初始化
+[Wed Feb 25 12:32:52 2026] [INFO] ChordRingManager 初始化
+[Wed Feb 25 12:32:58 2026] [INFO] ========== Chord Ring ==========
+[Wed Feb 25 12:32:58 2026] [INFO] 节点数: 0
+[Wed Feb 25 12:33:02 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) with finger table: [(44, Node(ID: 43 ,IP: 1 )), (45, Node(ID: 43 ,IP: 1 )), (47, Node(ID: 43 ,IP: 1 )), (51, Node(ID: 43 ,IP: 1 )), (59, Node(ID: 43 ,IP: 1 )), (75, Node(ID: 43 ,IP: 1 )), (107, Node(ID: 43 ,IP: 1 )), (171, Node(ID: 43 ,IP: 1 )), ]
+[Wed Feb 25 12:33:02 2026] [INFO] 节点加入: Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:33:02 2026] [INFO] joinRing: Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:33:02 2026] [INFO] Init Chord Node(ID: 43 ,IP: 1 ) as the first node in the ring.
+[Wed Feb 25 12:33:02 2026] [INFO] Init Chord Node(ID: 55 ,IP: 2 ) with finger table: [(56, Node(ID: 55 ,IP: 2 )), (57, Node(ID: 55 ,IP: 2 )), (59, Node(ID: 55 ,IP: 2 )), (63, Node(ID: 55 ,IP: 2 )), (71, Node(ID: 55 ,IP: 2 )), (87, Node(ID: 55 ,IP: 2 )), (119, Node(ID: 55 ,IP: 2 )), (183, Node(ID: 55 ,IP: 2 )), ]
+[Wed Feb 25 12:33:02 2026] [INFO] 节点加入: Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:33:02 2026] [INFO] joinRing: Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:33:02 2026] [INFO] initWithBootstrapNode: self=Node(ID: 55 ,IP: 2 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:33:02 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:33:02 2026] [INFO] 节点 Node(ID: 55 ,IP: 2 ) 初始化完成
+[Wed Feb 25 12:33:02 2026] [INFO] Init Chord Node(ID: 218 ,IP: 3 ) with finger table: [(219, Node(ID: 218 ,IP: 3 )), (220, Node(ID: 218 ,IP: 3 )), (222, Node(ID: 218 ,IP: 3 )), (226, Node(ID: 218 ,IP: 3 )), (234, Node(ID: 218 ,IP: 3 )), (250, Node(ID: 218 ,IP: 3 )), (26, Node(ID: 218 ,IP: 3 )), (90, Node(ID: 218 ,IP: 3 )), ]
+[Wed Feb 25 12:33:02 2026] [INFO] 节点加入: Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:33:02 2026] [INFO] joinRing: Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:33:02 2026] [INFO] initWithBootstrapNode: self=Node(ID: 218 ,IP: 3 ), bootstrap=Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:33:02 2026] [INFO] 找到后继: Node(ID: 43 ,IP: 1 ), bootstrap=Node(ID: 43 ,IP: 1 ), successorNode == bootstrapNode: true
+[Wed Feb 25 12:33:02 2026] [INFO] setSuccessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:33:02 2026] [INFO] 节点 Node(ID: 218 ,IP: 3 ) 初始化完成
+[Wed Feb 25 12:33:07 2026] [INFO] ========== Chord Ring ==========
+[Wed Feb 25 12:33:07 2026] [INFO] 节点数: 3
+[Wed Feb 25 12:33:26 2026] [INFO] ========== Chord Ring ==========
+[Wed Feb 25 12:33:26 2026] [INFO] 节点数: 3
+[Wed Feb 25 12:34:42 2026] [INFO] ========== Chord Ring ==========
+[Wed Feb 25 12:34:42 2026] [INFO] 节点数: 3
+[Wed Feb 25 12:36:31 2026] [INFO] 资源 'a' -> Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:36:31 2026] [INFO] 资源 'b' -> Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:36:31 2026] [INFO] 资源 'c' -> Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:36:31 2026] [INFO] 资源 'd' -> Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:36:31 2026] [INFO] 资源 'e' -> Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:36:31 2026] [INFO] 资源 'f' -> Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:36:31 2026] [INFO] 资源 'g' -> Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:36:48 2026] [INFO] ========== Chord Ring ==========
+[Wed Feb 25 12:36:48 2026] [INFO] 节点数: 3
+[Wed Feb 25 12:37:30 2026] [INFO] addResourceDirectly: Node(ID: 55 ,IP: 2 ) -> 17
+[Wed Feb 25 12:37:30 2026] [INFO] addResourceDirectly: Node(ID: 55 ,IP: 2 ) -> 33
+[Wed Feb 25 12:37:30 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:37:30 2026] [INFO] setPredecessor: Node(ID: 55 ,IP: 2 ) -> Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:37:30 2026] [INFO] Node(ID: 43 ,IP: 1 ) 已离开
+[Wed Feb 25 12:37:30 2026] [INFO] Destroy Chord Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:37:30 2026] [INFO] 节点移除: Node(ID: 43 ,IP: 1 )
+[Wed Feb 25 12:37:37 2026] [WARNING] 节点IP 1 不存在，无法删除
+[Wed Feb 25 12:37:37 2026] [INFO] addResourceDirectly: Node(ID: 218 ,IP: 3 ) -> 17
+[Wed Feb 25 12:37:37 2026] [INFO] addResourceDirectly: Node(ID: 218 ,IP: 3 ) -> 33
+[Wed Feb 25 12:37:37 2026] [INFO] addResourceDirectly: Node(ID: 218 ,IP: 3 ) -> 54
+[Wed Feb 25 12:37:37 2026] [INFO] addResourceDirectly: Node(ID: 218 ,IP: 3 ) -> 55
+[Wed Feb 25 12:37:37 2026] [INFO] setSuccessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:37:37 2026] [INFO] setPredecessor: Node(ID: 218 ,IP: 3 ) -> Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:37:37 2026] [INFO] Node(ID: 55 ,IP: 2 ) 已离开
+[Wed Feb 25 12:37:37 2026] [INFO] Destroy Chord Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:37:37 2026] [INFO] 节点移除: Node(ID: 55 ,IP: 2 )
+[Wed Feb 25 12:37:42 2026] [INFO] ========== Chord Ring ==========
+[Wed Feb 25 12:37:42 2026] [INFO] 节点数: 1
+[Wed Feb 25 12:37:51 2026] [INFO] Destroy Chord Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:37:51 2026] [INFO] 节点移除: Node(ID: 218 ,IP: 3 )
+[Wed Feb 25 12:37:53 2026] === 程序结束 ===
