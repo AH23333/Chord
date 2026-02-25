@@ -468,12 +468,12 @@ void ChordCLI::execute_command(const CommandResult &cmd)
             Node n = ringManager.lookupResource(name);
             if (n.isEmpty())
             {
-                ss << "  资源 '" << name << "' 不存在" << endl;
+                ss << "  资源 '" << name << "' 不存在";
                 print_error(ss.str());
             }
             else
             {
-                ss << "  资源 '" << name << "' 由节点 " << n.toString() << " 负责" << endl;
+                ss << "  资源 '" << name << "' 由节点 " << n.toString() << " 负责";
                 print_success(ss.str());
             }
             ss.str("");
@@ -570,3 +570,4 @@ void ChordCLI::print_success(const string &msg)
     cout << "\033[32m[成功] " << msg << "\033[0m" << endl;
 
 }
+
