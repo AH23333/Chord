@@ -146,15 +146,6 @@ Chord *ChordProxy::findChordNodeByID(uint32_t id)
 }
 
 /**
- * @brief 获取Chord环中的总节点数
- * @return int 总节点数
- */
-int ChordProxy::getTotalNodesInRing()
-{
-    return ringManager ? ringManager->getTotalNodes() : 0;
-}
-
-/**
  * @brief 获取所有节点ID，按ID排序
  * @return vector<uint32_t> 所有节点ID的向量，按ID升序排序
  */
@@ -1331,4 +1322,5 @@ std::vector<std::string> ChordRingManager::getAllResourceNames() const
             names.push_back(res.second);
     }
     return names;
+
 }
