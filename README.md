@@ -113,10 +113,12 @@ chord> exit
 | `ans <ip> <ip> <ip> ...`| 添加多个节点add_nodes | `ans 192.168.1.101 192.168.1.102 192.168.1.103` |
 | `rn <ip>`   | 移除节点remove_node | `rn 192.168.1.100"`|
 | `rns <ip> <ip> <ip> ...` | 移除多个节点remove_nodes | `rns 192.168.1.101 192.168.1.102 192.168.1.103` |
+| `rns *` | 移除全部节点remove_nodes | `rns *` |
 | `ar <name>` | 添加资源add_resource | `ar a.pdf` |
 | `ars <name1> <name2> <name3> ...` | 添加多个资源add_resources | `rrs a.pdf b.ppt c.jpg` |
 | `rr <name>` | 移除资源remove_resource | `rr a.pdf` |
-| `rrs <name1> <name2> <name3> ...` | 移除多个资源remove_resources | `rrs a.pdf b.ppt c.jpg` |
+| `rrs <name1> <name2> <name3> ... ` | 移除多个资源remove_resources | `rrs a.pdf b.ppt c.jpg` |
+| `rrs *` | 移除全部资源remove_resources | `rrs *` |
 | `fr <name>` | 查找资源find_resource | `fr a.pdf` |
 | `frs <name1> <name2> <name3> ...` | 查找多个资源find_resources | `frs a.pdf b.ppt c.jpg` |
 | `ln` | 列出网络中节点list_node | `ln` |
