@@ -30,7 +30,6 @@ public:
     bool transferResourceToNode(Node &targetNode, const std::string &resource);
     void notifyNodeUpdate(Node &updatedNode);
     Chord *findChordNodeByID(uint32_t id);
-    int getTotalNodesInRing();  // 暂时没用到，实际也用不到
     std::vector<uint32_t> getAllSortedNodeIds();
     void notifyNodeLeave(Node &leftNode);
     Node findSuccessorFromAny(uint32_t id);
@@ -119,5 +118,6 @@ public:
     void setSuccessor(const Node &n);
     void showNodeInfo() const;
 };
+
 
 #endif // CHORD_H
