@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord 环形哈希环 · 可交互演示</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        }
+        body {
+            background: #1e2b3c;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+        .container {
+            max-width: 1300px;
+            width: fit-content;
+            background: #0f1a24;
+            border-radius: 2rem;
+            padding: 2rem 2rem 2rem 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            border: 1px solid #3a4d62;
+        }
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            color: #bdd9f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h1 small {
+            font-size: 0.9rem;
+            color: #7f9cbb;
+            font-weight: 300;
+            margin-left: auto;
+        }
+        .main-panel {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .canvas-area {
+            background: #1a2a36;
+            border-radius: 2rem;
+            padding: 1.5rem;
+            box-shadow: inset 0 0 10px #0b141c, 0 10px 20px rgba(0,0,0,0.4);
+            border: 1px solid #3c576b;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            background: #20323e;
+            box-shadow: 0 0 0 2px #2f4555, 0 0 0 5px #17252e;
+            width: 600px;
+            height: 600px;
+            cursor: crosshair;
+        }
+        .control-panel {
+            background: #16232e;
+            border-radius: 2rem;
+            padding: 1.6rem 1.8rem;
+            min-width: 300px;
+            flex: 1 1 320px;
+            border: 1px solid #3e5569;
+            box-shadow: inset 0 2px 5px #0b131c, 0 10px 20px rgba(0,0,0,0.3);
+            color: #d5e6f5;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            border-bottom: 2px solid #3d637f;
+            padding-bottom: 6px;
+            margin: 1.2rem 0 1rem 0;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #b3d6ff;
+        }
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+        .param-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        .param-row label {
+            font-weight: 500;
+            color: #b0cae5;
+            min-width: 60px;
+        }
+        .param-row input {
+            background: #1f3140;
+            border: 1px solid #3d5c78;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 40px;
+            width: 90px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1rem;
+            outline: none;
+            transition: 0.2s;
+        }
+        .param-row input:focus {
+            border-color: #7aafdf;
+            box-shadow: 0 0 0 2px #1f4970;
+        }
+        .hint-text {
+            font-size: 0.8rem;
+            color: #88a9cc;
+            margin-left: 72px;
+            margin-top: -6px;
+            margin-bottom: 10px;
+        }
+        button {
+            background: #28445c;
+            border: none;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            box-shadow: 0 5px 0 #0f1f2c, 0 4px 10px black;
+            transition: 0.08s linear;
+            border: 1px solid #3f6888;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        button:active {
+            transform: translateY(4px);
+            box-shadow: 0 1px 0 #0f1f2c, 0 4px 10px black;
+        }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0 10px;
+        }
+        .info-box {
+            background: #1d2e3d;
+            border-radius: 24px;
+            padding: 1.4rem;
+            border: 1px solid #3e607c;
+            box-shadow: inset 0 2px 6px #0f1b24;
+            margin-top: 25px;
+        }
+        .node-detail {
+            font-size: 0.9rem;
+        }
+        .node-detail p {
+            margin: 8px 0;
+            background: #15232f;
+            padding: 6px 12px;
+            border-radius: 30px;
+            border-left: 4px solid #c44;
+        }
+        .finger-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+            background: #1f3241;
+            border-radius: 16px;
+            overflow: hidden;
+            margin: 12px 0;
+        }
+        .finger-table th {
+            background: #263f54;
+            padding: 6px 4px;
+            font-weight: 500;
+            color: #d6ecff;
+        }
+        .finger-table td {
+            padding: 5px 6px;
+            text-align: center;
+            border-bottom: 1px solid #385066;
+        }
+        .res-list {
+            background: #1e2f3b;
+            padding: 8px 14px;
+            border-radius: 40px;
+            max-height: 80px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 0.9rem;
+            border: 1px solid #416079;
+            color: #c3e0a2;
+        }
+        .delete-btn {
+            background: #7a3f3f;
+            box-shadow: 0 4px 0 #3f1f1f;
+            margin-top: 15px;
+            width: 100%;
+            justify-content: center;
+            border-color: #b16565;
+        }
+        .delete-btn:active {
+            transform: translateY(3px);
+            box-shadow: 0 1px 0 #3f1f1f;
+        }
+        .legend {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 1rem 0 0.5rem;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .dot-red {
+            width: 16px;
+            height: 16px;
+            background: #f66;
+            border-radius: 50%;
+            border: 2px solid #fff3;
+            box-shadow: 0 0 10px #f66;
+        }
+        .dot-green {
+            width: 16px;
+            height: 16px;
+            background: #6f6;
+            border-radius: 50%;
+            border: 2px solid #fff3;
+            box-shadow: 0 0 8px #6f6;
+        }
+        .footer-note {
+            color: #6f8daa;
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🌀 Chord 分布式哈希环 <small>2^m 空间 · 交互演示</small></h1>
+    <div class="main-panel">
+        <!-- 画布区 -->
+        <div class="canvas-area">
+            <canvas id="chordCanvas" width="600" height="600"></canvas>
+            <div class="legend">
+                <div class="legend-item"><span class="dot-red"></span> 节点 (红色)</div>
+                <div class="legend-item"><span class="dot-green"></span> 资源 (绿色)</div>
+                <div class="legend-item"><span style="background:white;width:16px;height:16px;border-radius:50%;border:3px solid #ffd966;"></span> 选中节点</div>
+            </div>
+        </div>
+        <!-- 右侧控制台 -->
+        <div class="control-panel">
+            <div class="section-title">⚙️ 环配置</div>
+            <div class="param-row">
+                <label>m (2^m):</label>
+                <input type="number" id="mInput" min="3" max="10" value="6" step="1">
+                <button id="applyMBtn">📏 更新环</button>
+            </div>
+            <div class="hint-text">m 取值范围 3～10，过小/过大自动调整并提示</div>
+
+            <div class="section-title">➕ 加入 / 删除</div>
+            <div class="button-group">
+                <button id="addNodeBtn">🟥 随机节点</button>
+                <button id="addResourceBtn">🟩 随机资源</button>
+            </div>
+            <div class="button-group">
+                <button id="clearNodesBtn" style="background:#3f3555;">🗑️ 清空节点</button>
+                <button id="clearResourcesBtn" style="background:#3f5535;">🍃 清空资源</button>
+            </div>
+
+            <div class="section-title">📋 节点信息 (点击红点)</div>
+            <div class="info-box" id="nodeInfoPanel">
+                <div class="node-detail" id="nodeDetail">
+                    <p style="text-align:center; color:#9bbad0;">👆 点击红色节点查看详情</p>
+                </div>
+                <button id="deleteSelectedBtn" class="delete-btn" style="display: none;">❌ 删除选中节点</button>
+            </div>
+            <div class="footer-note">
+                💡 点击绿色资源点可直接删除 | 资源自动分配到后继节点
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    // ---------- 全局状态 ----------
+    let m = 6;                            // 幂次
+    let ringSize = 64;                    // 2^m
+    let nodes = [];                        // 节点对象数组 { id: number }
+    let resources = [];                    // 资源对象数组 { id: number }
+    let selectedNodeId = null;              // 当前选中节点id
+
+    // 画布引用
+    const canvas = document.getElementById('chordCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // UI 元素
+    const mInput = document.getElementById('mInput');
+    const applyMBtn = document.getElementById('applyMBtn');
+    const addNodeBtn = document.getElementById('addNodeBtn');
+    const addResourceBtn = document.getElementById('addResourceBtn');
+    const clearNodesBtn = document.getElementById('clearNodesBtn');
+    const clearResourcesBtn = document.getElementById('clearResourcesBtn');
+    const nodeDetailDiv = document.getElementById('nodeDetail');
+    const deleteSelectedBtn = document.getElementById('deleteSelectedBtn');
+
+    // 辅助函数：更新环大小 (重置所有数据)
+    function updateRingSize() {
+        let newM = parseInt(mInput.value, 10);
+        let adjusted = false;
+        if (isNaN(newM)) {
+            newM = 3;
+            adjusted = true;
+        } else {
+            if (newM < 3) {
+                newM = 3;
+                adjusted = true;
+            } else if (newM > 10) {
+                newM = 10;
+                adjusted = true;
+            }
+        }
+        if (adjusted) {
+            alert(`m 值已自动调整到有效范围 (3～10)。当前 m = ${newM}，环大小 = 2^${newM} = ${Math.pow(2, newM)}`);
+            mInput.value = newM; // 同步输入框
+        }
+        m = newM;
+        ringSize = Math.pow(2, m);
+        // 重置所有节点/资源/选中
+        nodes = [];
+        resources = [];
+        selectedNodeId = null;
+        deleteSelectedBtn.style.display = 'none';
+        // 为了演示有趣，加入几个初始节点和资源 (ID 在范围内)
+        const initNodes = [10, 25, 40, 55].filter(id => id < ringSize);
+        const initResources = [5, 12, 28, 33, 42, 60].filter(id => id < ringSize);
+        nodes = initNodes.map(id => ({ id }));
+        resources = initResources.map(id => ({ id }));
+        // 按照 id 排序节点 (便于后续计算)
+        sortNodes();
+        updateAll();
+    }
+
+    // 节点排序
+    function sortNodes() {
+        nodes.sort((a, b) => a.id - b.id);
+    }
+
+    // 工具：根据id获取节点对象 (用于选中)
+    function getNodeById(id) {
+        return nodes.find(n => n.id === id);
+    }
+
+    // ------- Chord 核心函数 (依赖排序后的nodes) --------
+    function getSortedNodes() {
+        return nodes.slice().sort((a, b) => a.id - b.id);
+    }
+
+    // 查找>=key的最近节点 (后继) , 如果key大于所有节点，返回第一个节点(环)
+    function findSuccessor(key) {
+        if (nodes.length === 0) return null;
+        const sorted = getSortedNodes();
+        for (let i = 0; i < sorted.length; i++) {
+            if (sorted[i].id >= key) return sorted[i];
+        }
+        return sorted[0]; // 回绕到第一个
+    }
+
+    // 查找给定节点的前驱 (逆时针最近)
+    function findPredecessor(nodeId) {
+        if (nodes.length <= 1) return nodes.length === 1 ? nodes[0] : null;
+        const sorted = getSortedNodes();
+        let idx = sorted.findIndex(n => n.id === nodeId);
+        if (idx === -1) return null;
+        return sorted[(idx - 1 + sorted.length) % sorted.length];
+    }
+
+    // 计算节点的finger表
+    function computeFingerTable(nodeId) {
+        if (nodes.length === 0) return [];
+        const node = getNodeById(nodeId);
+        if (!node) return [];
+        const fingers = [];
+        for (let i = 0; i < m; i++) {
+            const target = (node.id + Math.pow(2, i)) % ringSize;
+            const succ = findSuccessor(target);
+            fingers.push({
+                index: i,
+                pow2: Math.pow(2, i),
+                target: target,
+                successorId: succ ? succ.id : null
+            });
+        }
+        return fingers;
+    }
+
+    // 获取节点负责的资源 (所有资源中，后继为该节点的)
+    function getResourcesForNode(nodeId) {
+        if (nodes.length === 0) return [];
+        const node = getNodeById(nodeId);
+        if (!node) return [];
+        const ownerResources = [];
+        for (let res of resources) {
+            const owner = findSuccessor(res.id);
+            if (owner && owner.id === nodeId) {
+                ownerResources.push(res.id);
+            }
+        }
+        return ownerResources.sort((a,b) => a - b);
+    }
+
+    // ---------- 绘制 ----------
+    function drawRing() {
+        ctx.clearRect(0, 0, 600, 600);
+        const cx = 300, cy = 300, radius = 240;
+
+        // 绘制灰色环线
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
+        ctx.strokeStyle = '#3e668b';
+        ctx.lineWidth = 3;
+        ctx.stroke();
+        ctx.strokeStyle = '#1c3547';
+        ctx.lineWidth = 6;
+        ctx.stroke();
+
+        // 绘制小刻度 (可选)
+        for (let i = 0; i < 32; i++) {
+            let angle = (i / 32) * 2 * Math.PI - Math.PI/2;
+            let x1 = cx + (radius - 10) * Math.cos(angle);
+            let y1 = cy + (radius - 10) * Math.sin(angle);
+            let x2 = cx + (radius + 5) * Math.cos(angle);
+            let y2 = cy + (radius + 5) * Math.sin(angle);
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.strokeStyle = '#3c607c';
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+        }
+
+        // 绘制所有资源 (绿色小圆点)
+        for (let res of resources) {
+            let angle = (res.id / ringSize) * 2 * Math.PI - Math.PI/2;
+            let x = cx + radius * Math.cos(angle);
+            let y = cy + radius * Math.sin(angle);
+            ctx.beginPath();
+            ctx.arc(x, y, 8, 0, 2 * Math.PI);
+            ctx.fillStyle = '#7fe07f';
+            ctx.shadowColor = '#6f6';
+            ctx.shadowBlur = 12;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+            ctx.strokeStyle = '#ffffff';
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+            // 可选: 绘制极小id数字(但避免遮挡)
+        }
+
+        // 绘制所有节点 (红色大圆点)
+        for (let node of nodes) {
+            let angle = (node.id / ringSize) * 2 * Math.PI - Math.PI/2;
+            let x = cx + radius * Math.cos(angle);
+            let y = cy + radius * Math.sin(angle);
+            ctx.beginPath();
+            ctx.arc(x, y, 12, 0, 2 * Math.PI);
+            ctx.fillStyle = '#ff6b6b';
+            ctx.shadowColor = '#f66';
+            ctx.shadowBlur = 15;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+            ctx.strokeStyle = 'white';
+            ctx.lineWidth = node.id === selectedNodeId ? 5 : 2;
+            ctx.stroke();
+            // 显示节点id（简短）
+            ctx.font = 'bold 10px monospace';
+            ctx.fillStyle = '#fff';
+            ctx.shadowColor = '#000';
+            ctx.shadowBlur = 4;
+            ctx.fillText(node.id, x-15, y-15);
+            ctx.shadowBlur = 0;
+        }
+    }
+
+    // ---------- 更新所有: 绘制 + 信息面板刷新 ----------
+    function updateAll() {
+        sortNodes(); // 确保节点排序
+        drawRing();
+
+        // 更新右侧节点信息面板
+        if (selectedNodeId !== null && getNodeById(selectedNodeId)) {
+            showNodeInfo(selectedNodeId);
+            deleteSelectedBtn.style.display = 'block';
+        } else {
+            if (selectedNodeId !== null) selectedNodeId = null; // 节点不存在
+            nodeDetailDiv.innerHTML = '<p style="text-align:center; color:#9bbad0;">👆 点击红色节点查看详情</p>';
+            deleteSelectedBtn.style.display = 'none';
+        }
+    }
+
+    // 显示指定节点信息
+    function showNodeInfo(nodeId) {
+        const node = getNodeById(nodeId);
+        if (!node) return;
+        const pred = findPredecessor(nodeId);
+        // 后继定义为严格大于node.id的最小节点，若无则取最小节点
+        let actualSucc = null;
+        if (nodes.length > 1) {
+            const sorted = getSortedNodes();
+            let idx = sorted.findIndex(n => n.id === nodeId);
+            actualSucc = sorted[(idx + 1) % sorted.length];
+        } else {
+            actualSucc = node;
+        }
+
+        const fingerTable = computeFingerTable(nodeId);
+        const resourcesList = getResourcesForNode(nodeId);
+
+        let html = `<p><span style="color:#ffaeae;">🔴 节点 ID</span> <strong>${node.id}</strong></p>`;
+        html += `<p>◀ 前驱 : ${pred ? pred.id : '—'}</p>`;
+        html += `<p>▶ 后继 : ${actualSucc ? actualSucc.id : '—'}</p>`;
+        html += `<table class="finger-table"><tr><th>i</th><th>2^i</th><th>目标</th><th>后继节点</th></tr>`;
+        for (let f of fingerTable) {
+            html += `<tr><td>${f.index}</td><td>${f.pow2}</td><td>${f.target}</td><td>${f.successorId !== null ? f.successorId : '—'}</td></tr>`;
+        }
+        html += `</table>`;
+        html += `<div>📦 资源列表 (${resourcesList.length})：</div>`;
+        html += `<div class="res-list">${resourcesList.length ? resourcesList.join(', ') : '空'}</div>`;
+
+        nodeDetailDiv.innerHTML = html;
+    }
+
+    // ---------- 交互事件 ----------
+    // 处理画布点击
+    canvas.addEventListener('click', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const scaleX = canvas.width / rect.width;
+        const scaleY = canvas.height / rect.height;
+
+        const mouseX = (e.clientX - rect.left) * scaleX;
+        const mouseY = (e.clientY - rect.top) * scaleY;
+
+        const cx = 300, cy = 300, radius = 240;
+
+        // 先检测节点 (红点优先)
+        for (let node of nodes) {
+            let angle = (node.id / ringSize) * 2 * Math.PI - Math.PI/2;
+            let nx = cx + radius * Math.cos(angle);
+            let ny = cy + radius * Math.sin(angle);
+            let dist = Math.hypot(mouseX - nx, mouseY - ny);
+            if (dist < 16) {  // 点击容差
+                selectedNodeId = node.id;
+                updateAll();
+                return;
+            }
+        }
+
+        // 再检测资源 (绿点) 点击则删除该资源
+        for (let i = resources.length - 1; i >= 0; i--) {
+            let res = resources[i];
+            let angle = (res.id / ringSize) * 2 * Math.PI - Math.PI/2;
+            let rx = cx + radius * Math.cos(angle);
+            let ry = cy + radius * Math.sin(angle);
+            let dist = Math.hypot(mouseX - rx, mouseY - ry);
+            if (dist < 12) {
+                // 删除该资源
+                resources.splice(i, 1);
+                // 如果之前有选中节点，刷新其资源列表
+                updateAll();
+                return;
+            }
+        }
+
+        // 点击空白处取消选中
+        selectedNodeId = null;
+        updateAll();
+    });
+
+    // 添加节点 (随机不重复id)
+    function addRandomNode() {
+        if (nodes.length >= ringSize) {
+            alert(`环已满 (最多${ringSize}个节点)`);
+            return;
+        }
+        let maxAttempts = 2000;
+        while (maxAttempts-- > 0) {
+            let candidate = Math.floor(Math.random() * ringSize);
+            if (!nodes.some(n => n.id === candidate)) {
+                nodes.push({ id: candidate });
+                sortNodes();
+                // 新加入节点不自动选中
+                updateAll();
+                return;
+            }
+        }
+        alert('无法生成唯一节点ID，请扩大环或清空');
+    }
+
+    // 添加资源 (随机，尽量不重复资源ID，但允许与节点重复)
+    function addRandomResource() {
+        if (nodes.length === 0) {
+            alert('请先添加节点，否则资源无归属');
+            return;
+        }
+        let maxAttempts = 2000;
+        while (maxAttempts-- > 0) {
+            let candidate = Math.floor(Math.random() * ringSize);
+            if (!resources.some(r => r.id === candidate)) {
+                resources.push({ id: candidate });
+                updateAll();
+                return;
+            }
+        }
+        alert('资源ID空间紧张，无法生成唯一资源');
+    }
+
+    // 删除选中节点
+    function deleteSelected() {
+        if (selectedNodeId === null) return;
+        const idx = nodes.findIndex(n => n.id === selectedNodeId);
+        if (idx !== -1) {
+            nodes.splice(idx, 1);
+            selectedNodeId = null;
+            sortNodes();
+            updateAll();
+        }
+    }
+
+    // 清空节点
+    function clearNodes() {
+        nodes = [];
+        selectedNodeId = null;
+        updateAll();
+    }
+
+    // 清空资源
+    function clearResources() {
+        resources = [];
+        updateAll();
+    }
+
+    // 绑定按钮事件
+    applyMBtn.addEventListener('click', updateRingSize);
+
+    addNodeBtn.addEventListener('click', addRandomNode);
+
+    addResourceBtn.addEventListener('click', addRandomResource);
+
+    clearNodesBtn.addEventListener('click', clearNodes);
+
+    clearResourcesBtn.addEventListener('click', clearResources);
+
+    deleteSelectedBtn.addEventListener('click', () => {
+        deleteSelected();
+    });
+
+    // 初始化
+    updateRingSize();
+
+    // 当选中节点变化时，确保删除按钮可见性 (已经在updateAll处理)
+})();
+</script>
+</body>
+</html>
